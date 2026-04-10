@@ -1,0 +1,558 @@
+Date: Fri, 10 Apr 2026 03:12:01 +0000 (UTC)
+Message-ID: <538397575.13.1775790721773@f6272867eb71>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_12_1589760703.1775790721772"
+
+------=_Part_12_1589760703.1775790721772
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>API - =EC=98=88=EC=95=BD/=EB=8C=80=EA=B8=B0 =EC=83=81=ED=83=9C =
+=EB=B3=80=EA=B2=BD_=ED=87=B4=EC=84=9D</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>API - =EC=98=88=EC=95=BD/=EB=8C=80=EA=B8=B0 =EC=83=81=ED=83=9C =EB=
+=B3=80=EA=B2=BD_=ED=87=B4=EC=84=9D</h1>
+    <div class=3D"Section1">
+        <div class=3D"contentLayout2">
+<div class=3D"columnLayout fixed-width" data-layout=3D"fixed-width">
+<div class=3D"cell normal" data-type=3D"normal">
+<div class=3D"innerCell">
+<div class=3D"confluence-information-macro confluence-information-macro-inf=
+ormation">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
+tion-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p>=EC=98=88=EC=95=BD/=EB=8C=80=EA=B8=B0=EC=9D=98 =EC=83=81=ED=83=9C=EB=A5=
+=BC =ED=87=B4=EC=84=9D =EC=83=81=ED=83=9C=EB=A1=9C =EB=B3=80=EA=B2=BD=ED=95=
+=9C=EB=8B=A4.<br>
+ =EC=9B=90=EA=B2=A9=EC=A4=84=EC=84=9C=EA=B8=B0=EC=9D=98 =EA=B2=BD=EC=9A=B0 =
+=ED=8F=AD=ED=83=84=EC=9D=84 =EC=9C=A0=EC=A0=80=EC=97=90=EA=B2=8C =ED=99=98=
+=EA=B8=89, =ED=85=8C=EC=9D=B4=EB=B8=94=EB=A7=81=ED=8E=98=EC=9D=B4=EB=A1=9C =
+=EA=B2=B0=EC=A0=9C=EB=90=9C =EC=A3=BC=EB=AC=B8=EC=9D=B4 =EC=9E=88=EB=8A=94 =
+=EA=B2=BD=EC=9A=B0 =EC=9C=A0=EC=A0=80=EC=97=90=EA=B2=8C =ED=8F=AD=ED=83=84=
+=EC=9D=84 =EC=A7=80=EA=B8=89=ED=95=9C=EB=8B=A4.<br>
+=EB=B3=B4=EC=A6=9D=EA=B8=88=EC=9D=B4 =EC=9E=88=EC=9D=84 =EA=B2=BD=EC=9A=B0 =
+=EB=B3=B4=EC=A6=9D=EA=B8=88=EC=9D=84 =ED=99=98=EA=B8=89=ED=95=9C=EB=8B=A4.<=
+/p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=3D"columnLayout two-right-sidebar" data-layout=3D"two-right-side=
+bar">
+<div class=3D"cell normal" data-type=3D"normal">
+<div class=3D"innerCell">
+<h2 id=3D"API-=EC=98=88=EC=95=BD/=EB=8C=80=EA=B8=B0=EC=83=81=ED=83=9C=EB=B3=
+=80=EA=B2=BD_=ED=87=B4=EC=84=9D-=EC=98=88=EC=95=BD/=EB=8C=80=EA=B8=B0=EC=83=
+=81=ED=83=9C=EB=B3=80=EA=B2=BD_=ED=87=B4=EC=84=9D">=EC=98=88=EC=95=BD/=EB=
+=8C=80=EA=B8=B0 =EC=83=81=ED=83=9C =EB=B3=80=EA=B2=BD_=ED=87=B4=EC=84=9D</h=
+2>
+<hr>
+<h3 id=3D"API-=EC=98=88=EC=95=BD/=EB=8C=80=EA=B8=B0=EC=83=81=ED=83=9C=EB=B3=
+=80=EA=B2=BD_=ED=87=B4=EC=84=9D-=EC=9A=94=EC=B2=AD=EA=B2=BD=EB=A1=9C">=EC=
+=9A=94=EC=B2=AD =EA=B2=BD=EB=A1=9C</h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Midnight" data-theme=3D"Midnight">PATCH /api/=
+restaurants/:restaurantIdx/reservation/:reservationIdx/status/finish</pre>
+</div>
+</div>
+<hr>
+<h3 id=3D"API-=EC=98=88=EC=95=BD/=EB=8C=80=EA=B8=B0=EC=83=81=ED=83=9C=EB=B3=
+=80=EA=B2=BD_=ED=87=B4=EC=84=9D-=EC=9A=94=EC=B2=AD=ED=97=A4=EB=8D=94">=EC=
+=9A=94=EC=B2=AD =ED=97=A4=EB=8D=94</h3>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"9bf7ed65-4905-4486-bdbd-a46=
+1e1926e28" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 361.0px;">
+<col style=3D"width: 359.0px;">
+<col style=3D"width: 359.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p><strong>=EC=9D=B4=EB=A6=84</strong></p></th>
+<th class=3D"confluenceTh">
+<p><strong>=EA=B0=92</strong></p></th>
+<th class=3D"confluenceTh">
+<p><strong>=EC=84=A4=EB=AA=85</strong></p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Content-Type</p></td>
+<td class=3D"confluenceTd">
+<p>application/json</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>clientId</p></td>
+<td class=3D"confluenceTd">
+<p>String</p></td>
+<td class=3D"confluenceTd">
+<p>=EC=82=AC=EC=9A=A9=EC=9E=90 =EA=B8=B0=EA=B8=B0 =EA=B3=A0=EC=9C=A0=EA=B0=
+=92</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id=3D"API-=EC=98=88=EC=95=BD/=EB=8C=80=EA=B8=B0=EC=83=81=ED=83=9C=EB=B3=
+=80=EA=B2=BD_=ED=87=B4=EC=84=9D-=EC=9A=94=EC=B2=AD=ED=8C=8C=EB=9D=BC=EB=AF=
+=B8=ED=84=B0">=EC=9A=94=EC=B2=AD =ED=8C=8C=EB=9D=BC=EB=AF=B8=ED=84=B0</h3>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"b34dd711-7b9d-4df7-8a74-ed1=
+cc1f5d0be" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 219.0px;">
+<col style=3D"width: 215.0px;">
+<col style=3D"width: 215.0px;">
+<col style=3D"width: 215.0px;">
+<col style=3D"width: 215.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p><strong>=EC=9D=B4=EB=A6=84</strong></p></th>
+<th class=3D"confluenceTh">
+<p><strong>=ED=83=80=EC=9E=85</strong></p></th>
+<th class=3D"confluenceTh">
+<p><strong>=EC=84=A4=EB=AA=85</strong></p></th>
+<th class=3D"confluenceTh">
+<p><strong>=EA=B8=B0=EB=B3=B8=EA=B0=92</strong></p></th>
+<th class=3D"confluenceTh">
+<p><strong>=ED=95=84=EC=88=98 =EC=97=AC=EB=B6=80</strong></p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>restaurantIdx</p></td>
+<td class=3D"confluenceTd">
+<p>Number</p></td>
+<td class=3D"confluenceTd">
+<p>=EB=A7=A4=EC=9E=A5 =EC=95=84=EC=9D=B4=EB=94=94</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p>O</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>reservationIdx</p></td>
+<td class=3D"confluenceTd">
+<p>Number</p></td>
+<td class=3D"confluenceTd">
+<p>=EC=98=88=EC=95=BD =EC=95=84=EC=9D=B4=EB=94=94</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p>O</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h3 id=3D"API-=EC=98=88=EC=95=BD/=EB=8C=80=EA=B8=B0=EC=83=81=ED=83=9C=EB=B3=
+=80=EA=B2=BD_=ED=87=B4=EC=84=9D-=EC=9D=91=EB=8B=B5=EB=B3=B8=EB=AC=B8">=EC=
+=9D=91=EB=8B=B5 =EB=B3=B8=EB=AC=B8</h3>
+<h4 id=3D"API-=EC=98=88=EC=95=BD/=EB=8C=80=EA=B8=B0=EC=83=81=ED=83=9C=EB=B3=
+=80=EA=B2=BD_=ED=87=B4=EC=84=9D-=EC=9A=94=EC=B2=AD=EC=84=B1=EA=B3=B5">=EC=
+=9A=94=EC=B2=AD =EC=84=B1=EA=B3=B5</h4>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Midnight" data-theme=3D"Midnight">HTTP/1.1 20=
+4 No Content</pre>
+</div>
+</div>
+<hr>
+<h4 id=3D"API-=EC=98=88=EC=95=BD/=EB=8C=80=EA=B8=B0=EC=83=81=ED=83=9C=EB=B3=
+=80=EA=B2=BD_=ED=87=B4=EC=84=9D-=EC=9A=94=EC=B2=AD=EC=8B=A4=ED=8C=A8">=EC=
+=9A=94=EC=B2=AD =EC=8B=A4=ED=8C=A8</h4>
+<h5 id=3D"API-=EC=98=88=EC=95=BD/=EB=8C=80=EA=B8=B0=EC=83=81=ED=83=9C=EB=B3=
+=80=EA=B2=BD_=ED=87=B4=EC=84=9D-=EC=9A=94=EC=B2=AD=ED=8C=8C=EB=9D=BC=EB=AF=
+=B8=ED=84=B0=EC=97=90=EB=A7=A4=EC=9E=A5=EC=95=84=EC=9D=B4=EB=94=94=EA=B0=80=
+=EC=88=AB=EC=9E=90=ED=98=95=EC=9D=B4=EC=95=84=EB=8B=90=EB=95=8C">=EC=9A=94=
+=EC=B2=AD =ED=8C=8C=EB=9D=BC=EB=AF=B8=ED=84=B0=EC=97=90 =EB=A7=A4=EC=9E=A5=
+=EC=95=84=EC=9D=B4=EB=94=94=EA=B0=80 =EC=88=AB=EC=9E=90=ED=98=95=EC=9D=B4 =
+=EC=95=84=EB=8B=90 =EB=95=8C</h5>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Midnight" data-theme=3D"Midnight">HTTP/1.1 40=
+0 Bad Request
+{
+    "error": {
+        "status": 400,
+        "name": "DataTypeError",
+        "message": "=EB=A7=A4=EC=9E=A5=EC=95=84=EC=9D=B4=EB=94=94(restauran=
+tIdx)=EA=B0=80 =EC=9E=85=EB=A0=A5=ED=98=95=EC=8B=9D=EC=97=90 =EB=A7=9E=EC=
+=A7=80 =EC=95=8A=EC=8A=B5=EB=8B=88=EB=8B=A4.",
+        "errorCode": "BASE_RESTAURANTIDX"
+    }
+}</pre>
+</div>
+</div>
+<h5 id=3D"API-=EC=98=88=EC=95=BD/=EB=8C=80=EA=B8=B0=EC=83=81=ED=83=9C=EB=B3=
+=80=EA=B2=BD_=ED=87=B4=EC=84=9D-=EC=9A=94=EC=B2=AD=ED=8C=8C=EB=9D=BC=EB=AF=
+=B8=ED=84=B0=EC=97=90=EC=98=88=EC=95=BD=EC=95=84=EC=9D=B4=EB=94=94=EA=B0=80=
+=EC=88=AB=EC=9E=90=ED=98=95=EC=9D=B4=EC=95=84=EB=8B=90=EB=95=8C">=EC=9A=94=
+=EC=B2=AD =ED=8C=8C=EB=9D=BC=EB=AF=B8=ED=84=B0=EC=97=90 =EC=98=88=EC=95=BD=
+=EC=95=84=EC=9D=B4=EB=94=94=EA=B0=80 =EC=88=AB=EC=9E=90=ED=98=95=EC=9D=B4 =
+=EC=95=84=EB=8B=90 =EB=95=8C</h5>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Midnight" data-theme=3D"Midnight">HTTP/1.1 40=
+0 Bad Request
+{
+    "error": {
+        "status": 400,
+        "name": "DataTypeError",
+        "message": "=EC=98=88=EC=95=BD=EC=95=84=EC=9D=B4=EB=94=94(reservati=
+onIdx)=EA=B0=80 =EC=9E=85=EB=A0=A5=ED=98=95=EC=8B=9D=EC=97=90 =EB=A7=9E=EC=
+=A7=80 =EC=95=8A=EC=8A=B5=EB=8B=88=EB=8B=A4.",
+        "errorCode": "BASE_RESERVATIONIDX"
+    }
+}</pre>
+</div>
+</div>
+<h5 id=3D"API-=EC=98=88=EC=95=BD/=EB=8C=80=EA=B8=B0=EC=83=81=ED=83=9C=EB=B3=
+=80=EA=B2=BD_=ED=87=B4=EC=84=9D-=EC=98=88=EC=95=BD=EC=95=84=EC=9D=B4=EB=94=
+=94=EC=97=90=ED=95=B4=EB=8B=B9=ED=95=98=EB=8A=94=EC=A0=95=EB=B3=B4=EA=B0=80=
+=EC=97=86=EC=9D=84=EB=95=8C">=EC=98=88=EC=95=BD =EC=95=84=EC=9D=B4=EB=94=94=
+=EC=97=90 =ED=95=B4=EB=8B=B9=ED=95=98=EB=8A=94 =EC=A0=95=EB=B3=B4=EA=B0=80 =
+=EC=97=86=EC=9D=84 =EB=95=8C</h5>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Midnight" data-theme=3D"Midnight">HTTP/1.1 40=
+4 Not Found
+{
+    "error": {
+        "status": 404,
+        "name": "NotFoundError",
+        "message": "=ED=95=B4=EB=8B=B9 =EC=98=88=EC=95=BD=EC=9D=84 =EC=B0=
+=BE=EC=9D=84 =EC=88=98 =EC=97=86=EC=8A=B5=EB=8B=88=EB=8B=A4.",
+        "errorCode": "NOT_FOUND_RESERVATION"
+    }
+}</pre>
+</div>
+</div>
+<h5 id=3D"API-=EC=98=88=EC=95=BD/=EB=8C=80=EA=B8=B0=EC=83=81=ED=83=9C=EB=B3=
+=80=EA=B2=BD_=ED=87=B4=EC=84=9D-=ED=95=B4=EB=8B=B9=EB=A7=A4=EC=9E=A5=EC=9D=
+=98=EC=98=88=EC=95=BD=EC=9D=B4=EC=95=84=EB=8B=90=EB=95=8C">=ED=95=B4=EB=8B=
+=B9 =EB=A7=A4=EC=9E=A5=EC=9D=98 =EC=98=88=EC=95=BD=EC=9D=B4 =EC=95=84=EB=8B=
+=90 =EB=95=8C</h5>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Midnight" data-theme=3D"Midnight">HTTP/1.1 40=
+0 Bad Request
+{
+    "error": {
+        "status": 400,
+        "name": "BadRequestError",
+        "message": "=ED=95=B4=EB=8B=B9 =EB=A7=A4=EC=9E=A5=EC=9D=98 =EC=98=
+=88=EC=95=BD=EC=9D=B4 =EC=95=84=EB=8B=99=EB=8B=88=EB=8B=A4.",
+        "errorCode": "NOT_RESERVATION_OF_THE_RESTAURANT"
+    }
+}</pre>
+</div>
+</div>
+<h5 id=3D"API-=EC=98=88=EC=95=BD/=EB=8C=80=EA=B8=B0=EC=83=81=ED=83=9C=EB=B3=
+=80=EA=B2=BD_=ED=87=B4=EC=84=9D-=EC=83=81=ED=83=9C=EA=B0=92=EC=9D=98=EB=B3=
+=80=EA=B2=BD=EC=82=AC=ED=95=AD=EC=9D=B4=EC=97=86=EC=9D=84=EB=95=8C">=EC=83=
+=81=ED=83=9C=EA=B0=92=EC=9D=98 =EB=B3=80=EA=B2=BD =EC=82=AC=ED=95=AD=EC=9D=
+=B4 =EC=97=86=EC=9D=84 =EB=95=8C</h5>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Midnight" data-theme=3D"Midnight">HTTP/1.1 40=
+6 Not Acceptable
+{
+    "error": {
+        "status": 406,
+        "name": "PolicyError",
+        "message": "=EC=9D=B4=EB=AF=B8 =ED=87=B4=EC=84=9D =EC=B2=98=EB=A6=
+=AC=EB=90=98=EC=97=88=EC=8A=B5=EB=8B=88=EB=8B=A4.",
+        "errorCode": "ALREADY_IN_STATUS"
+    }
+}</pre>
+</div>
+</div>
+</div>
+</div>
+<div class=3D"cell aside" data-type=3D"aside">
+<div class=3D"innerCell">
+<style>
+    .aui td {
+        white-space: nowrap;
+    }
+</style>
+<table width=3D"100%" cellspacing=3D"0" class=3D"aui">
+<tbody>
+<tr>
+<th>=EB=B2=84=EC=A0=84</th>
+<th>=EB=82=A0=EC=A7=9C</th>
+<th>=EB=8C=93=EA=B8=80</th>
+</tr>
+<tr id=3D"rowForVersion2">
+<td align=3D"left"><b> <a href=3D"https://mealantcloud.atlassian.net/wiki/p=
+ages/viewpage.action?pageId=3D1766293518">=ED=98=84=EC=9E=AC =EB=B2=84=EC=
+=A0=84</a> (v. 2) </b></td>
+<td align=3D"middle"><b> 2022-3=EC=9B=94-31-01:34 </b></td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><b> <a href=3D"h=
+ttps://mealantcloud.atlassian.net/wiki/people/5e4b5185bbb5110c9a6764d9" cla=
+ss=3D"url fn confluence-userlink" data-account-id=3D"5e4b5185bbb5110c9a6764=
+d9">=EC=86=90=EC=9C=A0=EC=A7=84</a> </b>:<br>
+ =EB=8F=99=EC=9D=BC=ED=95=9C =EC=83=81=ED=83=9C =EB=B3=80=EA=B2=BD =EC=8B=
+=9C =EC=97=90=EB=9F=AC =EB=A9=94=EC=8B=9C=EC=A7=80 =EB=B3=80=EA=B2=BD</td>
+</tr>
+<tr id=3D"rowForVersion1" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D1830158370&amp;pageVersion=3D1">v. 1</a></td>
+<td align=3D"middle">2021-10=EC=9B=94-25-01:04</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/5e4b5185bbb5110c9a6764d9" class=
+=3D"url fn confluence-userlink" data-account-id=3D"5e4b5185bbb5110c9a6764d9=
+">=EC=86=90=EC=9C=A0=EC=A7=84</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class=3D"columnLayout fixed-width" data-layout=3D"fixed-width">
+<div class=3D"cell normal" data-type=3D"normal">
+<div class=3D"innerCell">
+<p></p>
+</div>
+</div>
+</div>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_12_1589760703.1775790721772--

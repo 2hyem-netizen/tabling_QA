@@ -1,0 +1,1650 @@
+Date: Fri, 10 Apr 2026 03:12:21 +0000 (UTC)
+Message-ID: <1844025702.11.1775790741893@a7b25032dd29>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_10_441335920.1775790741893"
+
+------=_Part_10_441335920.1775790741893
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>API - =EC=98=88=EC=95=BD/=EB=8C=80=EA=B8=B0 =EB=AA=A9=EB=A1=9D =
+=EC=A1=B0=ED=9A=8C</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>API - =EC=98=88=EC=95=BD/=EB=8C=80=EA=B8=B0 =EB=AA=A9=EB=A1=9D =EC=
+=A1=B0=ED=9A=8C</h1>
+    <div class=3D"Section1">
+        <div class=3D"confluence-information-macro confluence-information-m=
+acro-information">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
+tion-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p local-id=3D"e9dbc67083af">=ED=95=B4=EB=8B=B9 =EB=82=A0=EC=A7=9C=EC=9D=98=
+ =EC=98=88=EC=95=BD=EA=B3=BC =EB=8C=80=EA=B8=B0=EB=AA=A9=EB=A1=9D=EC=9D=84 =
+=EC=A1=B0=ED=9A=8C=ED=95=9C=EB=8B=A4.</p>
+</div>
+</div>
+<h2 local-id=3D"8cfe3017c4fc" id=3D"API-=EC=98=88=EC=95=BD/=EB=8C=80=EA=B8=
+=B0=EB=AA=A9=EB=A1=9D=EC=A1=B0=ED=9A=8C-=EC=98=88=EC=95=BD/=EB=8C=80=EA=B8=
+=B0=EB=AA=A9=EB=A1=9D=EC=A1=B0=ED=9A=8C">=EC=98=88=EC=95=BD/=EB=8C=80=EA=B8=
+=B0 =EB=AA=A9=EB=A1=9D =EC=A1=B0=ED=9A=8C</h2>
+<hr local-id=3D"4b2d02f7-b817-49ca-ada0-621adaa85044">
+<h3 local-id=3D"efa4f1424676" id=3D"API-=EC=98=88=EC=95=BD/=EB=8C=80=EA=B8=
+=B0=EB=AA=A9=EB=A1=9D=EC=A1=B0=ED=9A=8C-=EC=9A=94=EC=B2=AD=EA=B2=BD=EB=A1=
+=9C">=EC=9A=94=EC=B2=AD =EA=B2=BD=EB=A1=9C</h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Midnight" data-theme=3D"Midnight">GET /api/re=
+staurants/:restaurantIdx/reservation</pre>
+</div>
+</div>
+<hr local-id=3D"ba195d24-ba56-4e4a-974a-a63834dfbee7">
+<h3 local-id=3D"47fc5f552e38" id=3D"API-=EC=98=88=EC=95=BD/=EB=8C=80=EA=B8=
+=B0=EB=AA=A9=EB=A1=9D=EC=A1=B0=ED=9A=8C-=EC=9A=94=EC=B2=AD=ED=97=A4=EB=8D=
+=94">=EC=9A=94=EC=B2=AD =ED=97=A4=EB=8D=94</h3>
+<div class=3D"table-wrap">
+<table data-table-width=3D"1415" data-layout=3D"center" data-local-id=3D"dd=
+f3e52f-e756-4bbc-ba92-cffaa71f0583" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 477.0px;">
+<col style=3D"width: 469.0px;">
+<col style=3D"width: 469.0px;">
+</colgroup>
+<tbody>
+<tr data-local-id=3D"74b8ece1-9371-45fe-9b5b-f3b99d8def5c">
+<th data-local-id=3D"4f0c655f-cce1-4589-96c7-54de7dc26cb6" class=3D"conflue=
+nceTh">
+<p local-id=3D"99ae778aca38"><strong>=EC=9D=B4=EB=A6=84</strong></p></th>
+<th data-local-id=3D"a824105e-0af6-42cd-b11a-0f2993c3372d" class=3D"conflue=
+nceTh">
+<p local-id=3D"69f242157d0a"><strong>=EA=B0=92</strong></p></th>
+<th data-local-id=3D"c628aa67-2989-463c-8261-a1d2539559dd" class=3D"conflue=
+nceTh">
+<p local-id=3D"8dd5d92dd7cf"><strong>=EC=84=A4=EB=AA=85</strong></p></th>
+</tr>
+<tr data-local-id=3D"df39ff45-5a5c-4c2d-9bb4-058ecb6183d9">
+<td data-local-id=3D"4495b656-e36d-4a16-aa16-2dff69bd3990" class=3D"conflue=
+nceTd">
+<p local-id=3D"adb6cb12ea93">Content-Type</p></td>
+<td data-local-id=3D"e6b7272d-955a-47bd-a60e-bc7363c77a7e" class=3D"conflue=
+nceTd">
+<p local-id=3D"196eb6cc1b53">application/json</p></td>
+<td data-local-id=3D"f3d5c81e-0361-46b0-a81a-7e96abdd7b80" class=3D"conflue=
+nceTd">
+<p local-id=3D"c272c613d618"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 local-id=3D"a4ae85a4b269" id=3D"API-=EC=98=88=EC=95=BD/=EB=8C=80=EA=B8=
+=B0=EB=AA=A9=EB=A1=9D=EC=A1=B0=ED=9A=8C-=EC=9A=94=EC=B2=AD=ED=8C=8C=EB=9D=
+=BC=EB=AF=B8=ED=84=B0">=EC=9A=94=EC=B2=AD =ED=8C=8C=EB=9D=BC=EB=AF=B8=ED=84=
+=B0</h3>
+<div class=3D"table-wrap">
+<table data-table-width=3D"1415" data-layout=3D"center" data-local-id=3D"64=
+846fbd-e207-49bc-abeb-664b45da5606" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 299.0px;">
+<col style=3D"width: 279.0px;">
+<col style=3D"width: 279.0px;">
+<col style=3D"width: 279.0px;">
+<col style=3D"width: 279.0px;">
+</colgroup>
+<tbody>
+<tr data-local-id=3D"ce22bfbd-3fbb-4137-8693-9e757c1ac472">
+<th data-local-id=3D"5b3f75bb-959c-471c-80be-74308d2f51ac" class=3D"conflue=
+nceTh">
+<p local-id=3D"986d1cbadce5"><strong>=EC=9D=B4=EB=A6=84</strong></p></th>
+<th data-local-id=3D"e750faa7-5fc2-4f28-9423-ed42651b518b" class=3D"conflue=
+nceTh">
+<p local-id=3D"4f8f62754522"><strong>=ED=83=80=EC=9E=85</strong></p></th>
+<th data-local-id=3D"9883992f-20ad-42ff-996d-49e672b99e7b" class=3D"conflue=
+nceTh">
+<p local-id=3D"5122f072a53e"><strong>=EC=84=A4=EB=AA=85</strong></p></th>
+<th data-local-id=3D"6004ed26-af3c-4d23-b8d1-331a878aefd2" class=3D"conflue=
+nceTh">
+<p local-id=3D"7f12a43ed67a"><strong>=EA=B8=B0=EB=B3=B8=EA=B0=92</strong></=
+p></th>
+<th data-local-id=3D"1e5aae2a-7e09-4fab-b803-bafc59d2bde0" class=3D"conflue=
+nceTh">
+<p local-id=3D"1e204e826b8b"><strong>=ED=95=84=EC=88=98 =EC=97=AC=EB=B6=80<=
+/strong></p></th>
+</tr>
+<tr data-local-id=3D"3c89cb40-8934-4919-bdd3-587cbc7c07df">
+<td data-local-id=3D"7e09b40c-cfb9-4e8c-99b7-e5572c8cfc0e" class=3D"conflue=
+nceTd">
+<p local-id=3D"d14c48bfe0cd">restaurantIdx</p></td>
+<td data-local-id=3D"8c77c421-afe5-4f5b-ac0b-44ba18f8f9c3" class=3D"conflue=
+nceTd">
+<p local-id=3D"4b3a5d79532a">Number</p></td>
+<td data-local-id=3D"e155d106-6327-4144-b5f0-24b0f002360e" class=3D"conflue=
+nceTd">
+<p local-id=3D"c9ba68721b1f">=EB=A7=A4=EC=9E=A5 =EC=95=84=EC=9D=B4=EB=94=94=
+</p></td>
+<td data-local-id=3D"f9b38d68-32d5-485f-a2a6-953621a2a54a" class=3D"conflue=
+nceTd">
+<p local-id=3D"269e9516f917"></p></td>
+<td data-local-id=3D"8101acbb-b2fb-4d50-80b3-851a31c1c30f" class=3D"conflue=
+nceTd">
+<p local-id=3D"87e161a916d4">O</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 local-id=3D"c7a1b5cd64b3" id=3D"API-=EC=98=88=EC=95=BD/=EB=8C=80=EA=B8=
+=B0=EB=AA=A9=EB=A1=9D=EC=A1=B0=ED=9A=8C-=EC=9A=94=EC=B2=AD=EC=BF=BC=EB=A6=
+=AC=EC=8A=A4=ED=8A=B8=EB=A7=81">=EC=9A=94=EC=B2=AD =EC=BF=BC=EB=A6=AC=EC=8A=
+=A4=ED=8A=B8=EB=A7=81</h3>
+<div class=3D"table-wrap">
+<table data-table-width=3D"1415" data-layout=3D"center" data-local-id=3D"42=
+aef9b1-ab3d-4177-8bbf-56d96f4c7fac" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 252.0px;">
+<col style=3D"width: 232.0px;">
+<col style=3D"width: 232.0px;">
+<col style=3D"width: 232.0px;">
+<col style=3D"width: 204.0px;">
+<col style=3D"width: 263.0px;">
+</colgroup>
+<tbody>
+<tr data-local-id=3D"2068b1f6-853a-4632-a99e-259082592998">
+<th data-local-id=3D"0a25164e-9fa9-471a-bf88-71131feb1afc" class=3D"conflue=
+nceTh">
+<p local-id=3D"6f07e1841252"><strong>=EC=9D=B4=EB=A6=84</strong></p></th>
+<th data-local-id=3D"ee074fe2-7f41-48ea-8d61-8a9b2baa23c7" class=3D"conflue=
+nceTh">
+<p local-id=3D"5398a2bfa42b"><strong>=ED=83=80=EC=9E=85</strong></p></th>
+<th data-local-id=3D"901d69cf-8a21-43e6-b34b-a780c2616e26" class=3D"conflue=
+nceTh">
+<p local-id=3D"229127350669"><strong>=EC=84=A4=EB=AA=85</strong></p></th>
+<th data-local-id=3D"9d3408bc-cc20-44b0-b184-72490f2a56e7" class=3D"conflue=
+nceTh">
+<p local-id=3D"8ecc0cb1db9b"><strong>=EA=B8=B0=EB=B3=B8=EA=B0=92</strong></=
+p></th>
+<th data-local-id=3D"e9250252-0fb4-49e4-87d2-df799be8d180" class=3D"conflue=
+nceTh">
+<p local-id=3D"82df2f1b0b79"><strong>=ED=95=84=EC=88=98 =EC=97=AC=EB=B6=80<=
+/strong></p></th>
+<th data-local-id=3D"15c791a3-9d81-41a3-b8b7-85d73bc042d9" class=3D"conflue=
+nceTh">
+<p local-id=3D"2c4cc362c32e"><strong>=EB=B9=84=EA=B3=A0</strong></p></th>
+</tr>
+<tr data-local-id=3D"7d6b3eb5-6981-4cdd-8457-23d699598d4e">
+<td data-local-id=3D"96f9b497-1e69-4d60-8f8d-aca882bc643c" class=3D"conflue=
+nceTd">
+<p local-id=3D"9099fbb62739">requestedDate</p></td>
+<td data-local-id=3D"eb834930-c6d6-4b3b-ac63-966289203ef5" class=3D"conflue=
+nceTd">
+<p local-id=3D"a963779d6fca">String</p></td>
+<td data-local-id=3D"6eb8399b-f19c-4816-bc7f-f670d96bab86" class=3D"conflue=
+nceTd">
+<p local-id=3D"ba191938238b">=EC=9A=94=EC=B2=AD =EB=82=A0=EC=A7=9C</p></td>
+<td data-local-id=3D"6791a4ef-e6f9-4100-ac62-c9692d0e5a53" class=3D"conflue=
+nceTd">
+<p local-id=3D"eb98e48c1f50">=EC=98=A4=EB=8A=98 =EB=82=A0=EC=A7=9C</p></td>
+<td data-local-id=3D"c93f4af7-9401-495a-987b-1bff3d1a7e8d" class=3D"conflue=
+nceTd">
+<p local-id=3D"6a6592cdf034">X</p></td>
+<td data-local-id=3D"b0e113ea-355d-4ece-8826-abf5260140e2" class=3D"conflue=
+nceTd">
+<p local-id=3D"fe1d24e43c49">YYYY-MM-DD</p></td>
+</tr>
+<tr data-local-id=3D"fcebbf82-609f-4793-927c-457fdc7d0526">
+<td data-local-id=3D"e85d6afa-c29c-46d9-9987-2113812047a8" class=3D"conflue=
+nceTd">
+<p local-id=3D"d7ba98922ca5">page</p></td>
+<td data-local-id=3D"aa1fd9e8-dd28-484b-93eb-7759a0bf3e75" class=3D"conflue=
+nceTd">
+<p local-id=3D"d12a6b36034d">Number</p></td>
+<td data-local-id=3D"7fc624b1-e8fd-49ce-b9f6-7afaad7c4bd7" class=3D"conflue=
+nceTd">
+<p local-id=3D"72e9eb7d6228">=ED=8E=98=EC=9D=B4=EC=A7=80 =EB=B2=88=ED=98=B8=
+</p></td>
+<td data-local-id=3D"fd8867fc-0207-4841-906b-0dba63e38d36" class=3D"conflue=
+nceTd">
+<p local-id=3D"856d231e722a">1</p></td>
+<td data-local-id=3D"6955a786-95bc-4cf4-a94b-884c8bdde7fa" class=3D"conflue=
+nceTd">
+<p local-id=3D"0bef48ae389f">X</p></td>
+<td data-local-id=3D"bdd54c9e-b0a3-41bb-a610-3d081488cbc4" class=3D"conflue=
+nceTd">
+<p local-id=3D"9c419090bb5d"></p></td>
+</tr>
+<tr data-local-id=3D"aa01cadc-7c5f-4d4e-8a92-8351d6fb65ac">
+<td data-local-id=3D"7aacfb87-a2af-4c23-ac6e-1d4f7aca752a" class=3D"conflue=
+nceTd">
+<p local-id=3D"588b52b16aec">pageSize</p></td>
+<td data-local-id=3D"f0dace5e-d504-4d21-ace1-46530b99ba31" class=3D"conflue=
+nceTd">
+<p local-id=3D"969df5735720">Number</p></td>
+<td data-local-id=3D"b5ab9d77-0d81-4b4e-a576-953e9120a4a6" class=3D"conflue=
+nceTd">
+<p local-id=3D"0b06d6a05cba">=ED=8E=98=EC=9D=B4=EC=A7=80 =EB=82=B4 =ED=95=
+=AD=EB=AA=A9 =EC=88=98</p></td>
+<td data-local-id=3D"495087c0-1913-4e74-b4da-a63b21b7b010" class=3D"conflue=
+nceTd">
+<p local-id=3D"90487673ee3d">n (=EB=AA=A8=EB=93=A0 =EA=B1=B4 =EC=A1=B0=ED=
+=9A=8C)</p></td>
+<td data-local-id=3D"dc932ca8-36c9-4388-abf0-bf9a051ccb32" class=3D"conflue=
+nceTd">
+<p local-id=3D"59da2b47b7f4">X</p></td>
+<td data-local-id=3D"0d340ec6-3171-46b3-bdb3-420ded2ed76f" class=3D"conflue=
+nceTd">
+<p local-id=3D"2cb0cba1819f"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id=3D"expander-1501398332" class=3D"expand-container">
+<div id=3D"expander-control-1501398332" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"90670aa742f1b632982b3a1027efa9c4509d84=
+587cee58ed37e5ece475a309ed" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">=EC=9A=94=EC=B2=AD =EC=BF=BC=EB=A6=AC=EC=8A=A4=ED=
+=8A=B8=EB=A7=81 =EC=83=81=EC=84=B8 =EC=84=A4=EB=AA=85</span>
+</div>
+<div id=3D"expander-content-1501398332" class=3D"expand-content">
+<p local-id=3D"d2b7cdeaf6f0"><strong>requestedDate=EC=9D=98 =EA=B2=BD=EC=9A=
+=B0</strong></p>
+<ul local-id=3D"5b4d6c1c-39e3-4305-a1d4-bb63bec749b5">
+<li local-id=3D"a40b296d-ee3c-44ad-8920-b7da46a7b525">
+<p local-id=3D"46a52e471ba2">=ED=82=A4 =ED=8F=AC=ED=95=A8 O : =ED=95=B4=EB=
+=8B=B9 =EB=82=A0=EC=A7=9C=EC=97=90 =EB=8C=80=ED=95=9C =EC=98=88=EC=95=BD =
+=EB=AA=A9=EB=A1=9D</p></li>
+<li local-id=3D"8cfa51b3-a726-4678-8ce1-b089a865ae65">
+<p local-id=3D"fee0d4c15197">=ED=82=A4 =ED=8F=AC=ED=95=A8 X : =EC=98=A4=EB=
+=8A=98 =EB=82=A0=EC=A7=9C=EC=97=90 =EB=8C=80=ED=95=9C =EC=98=88=EC=95=BD =
+=EB=AA=A9=EB=A1=9D</p></li>
+</ul>
+</div>
+</div>
+<hr local-id=3D"cae6321f-1484-4ee7-a07b-e71a0f9ed8e1">
+<h3 local-id=3D"258fdf8123a3" id=3D"API-=EC=98=88=EC=95=BD/=EB=8C=80=EA=B8=
+=B0=EB=AA=A9=EB=A1=9D=EC=A1=B0=ED=9A=8C-=EC=9D=91=EB=8B=B5=EB=B3=B8=EB=AC=
+=B8">=EC=9D=91=EB=8B=B5 =EB=B3=B8=EB=AC=B8</h3>
+<div class=3D"table-wrap">
+<table data-table-width=3D"1415" data-layout=3D"center" data-local-id=3D"e6=
+1ad5a4-e007-4dd1-95bd-7561a890d177" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 100.0px;">
+<col style=3D"width: 92.0px;">
+<col style=3D"width: 260.0px;">
+<col style=3D"width: 264.0px;">
+<col style=3D"width: 315.0px;">
+<col style=3D"width: 384.0px;">
+</colgroup>
+<tbody>
+<tr data-local-id=3D"f89d2436-8a83-4501-85f0-6517c0841b6b">
+<th colspan=3D"3" data-local-id=3D"652ecc88-64ce-4548-a230-c3c5d88c5779" cl=
+ass=3D"confluenceTh">
+<p local-id=3D"3c653532e867"><strong>=EC=9D=B4=EB=A6=84</strong></p></th>
+<th data-local-id=3D"07b96bad-a3a3-42d8-8a7a-f583f4497d92" class=3D"conflue=
+nceTh">
+<p local-id=3D"8318bfd0617a"><strong>=ED=83=80=EC=9E=85</strong></p></th>
+<th data-local-id=3D"d0eb68eb-7f43-43dc-b398-895b4584d4a2" class=3D"conflue=
+nceTh">
+<p local-id=3D"8011c828b04d"><strong>=EC=84=A4=EB=AA=85</strong></p></th>
+<th data-local-id=3D"2b70f977-e176-4eec-bb85-7425a2983736" class=3D"conflue=
+nceTh">
+<p local-id=3D"92b897ee476f"><strong>=EB=B9=84=EA=B3=A0</strong></p></th>
+</tr>
+<tr data-local-id=3D"c53531e5-77ce-4bf4-97aa-5312d43cfaa4">
+<td colspan=3D"3" data-local-id=3D"9eb6fb4a-1c2d-4a6d-b0a8-50869f82e381" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"a0504f325451">reservationList</p></td>
+<td data-local-id=3D"4d446b24-a4ef-43a6-a646-150cede3582e" class=3D"conflue=
+nceTd">
+<p local-id=3D"af774339caed">Array&lt;Object&gt;</p></td>
+<td data-local-id=3D"58cf06e6-b515-45c6-ab04-bf6a05defc91" class=3D"conflue=
+nceTd">
+<p local-id=3D"dcf415f272d7">=EC=98=88=EC=95=BD =EB=AA=A9=EB=A1=9D</p></td>
+<td data-local-id=3D"711df2c1-c18c-4f8d-9afb-6eb43807bbf4" class=3D"conflue=
+nceTd">
+<p local-id=3D"f29406f7578b"></p></td>
+</tr>
+<tr data-local-id=3D"fe802d48-f19f-46e8-ac7b-2e0adc742df4">
+<td rowspan=3D"39" data-local-id=3D"1356865a-5b77-4379-837d-53a0e5ca97b9" c=
+lass=3D"confluenceTd">
+<p local-id=3D"38b999619dfe"></p></td>
+<td colspan=3D"2" data-local-id=3D"c932a33d-609d-4fa3-98d4-5caaf338bd4f" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"63b9d18bc893">idx</p></td>
+<td data-local-id=3D"fa384109-8433-469a-85ca-7a5f76926d8a" class=3D"conflue=
+nceTd">
+<p local-id=3D"ed1873eb1392">Number</p></td>
+<td data-local-id=3D"04708574-cbe3-4ec8-b701-e192dd9af0fd" class=3D"conflue=
+nceTd">
+<p local-id=3D"ed71bc94cb51">=EC=98=88=EC=95=BD =EC=95=84=EC=9D=B4=EB=94=94=
+</p></td>
+<td data-local-id=3D"3b65e37b-01f0-4c9f-b508-32509a9330a1" class=3D"conflue=
+nceTd">
+<p local-id=3D"213791af1a1b"></p></td>
+</tr>
+<tr data-local-id=3D"b8ec8c92-178c-44fd-85b8-942efb1475b1">
+<td colspan=3D"2" data-local-id=3D"ce28f6a4-e71f-48e1-9244-34716fc8efad" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"09e19b24fd2a">status</p></td>
+<td data-local-id=3D"d9fda94f-126b-4e55-bd78-3cabb862156b" class=3D"conflue=
+nceTd">
+<p local-id=3D"a67b51549a3e">String</p></td>
+<td data-local-id=3D"ab085fc4-3b84-412e-be7f-a619bdba95d4" class=3D"conflue=
+nceTd">
+<p local-id=3D"05155b7e885a">=EC=83=81=ED=83=9C</p></td>
+<td data-local-id=3D"86be848e-b4fc-405d-961a-cf0b4930736a" class=3D"conflue=
+nceTd">
+<p local-id=3D"2f296aaa1b0d">RESERVE: =EC=98=88=EC=95=BD<br>
+SEAT: =EC=B0=A9=EC=84=9D<br>
+WAITING: =EB=8C=80=EA=B8=B0<br>
+NO_SHOW: =EB=85=B8=EC=87=BC<br>
+CANCEL: =EC=B7=A8=EC=86=8C<br>
+FINISH: =ED=87=B4=EC=84=9D</p></td>
+</tr>
+<tr data-local-id=3D"fa40e96e-eecd-43c4-a548-8dc51813c833">
+<td colspan=3D"2" data-local-id=3D"97155e3e-de88-421b-ab93-a966869012dc" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"4e336a5da2db">numOfPeople</p></td>
+<td data-local-id=3D"bd82ba50-e008-467c-bbc2-b4e39132b6af" class=3D"conflue=
+nceTd">
+<p local-id=3D"10fcde2ce9b4">Number</p></td>
+<td data-local-id=3D"4bbe7ece-da63-4d74-9b62-a99b7ba0454f" class=3D"conflue=
+nceTd">
+<p local-id=3D"7f2eb83b2bae">=EC=84=B1=EC=9D=B8 =EC=9D=B8=EC=9B=90=EC=88=98=
+</p></td>
+<td data-local-id=3D"739bc0c5-c0c4-4945-a024-cdb4a9be9c09" class=3D"conflue=
+nceTd">
+<p local-id=3D"9c2f3532a188"></p></td>
+</tr>
+<tr data-local-id=3D"8657aff9-184a-438e-885b-b3647fa88cb9">
+<td colspan=3D"2" data-local-id=3D"6388410f-3641-4951-a6ad-14ab8cd72789" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"c624ad2bd324">childCount</p></td>
+<td data-local-id=3D"4498d913-de79-4a48-b612-8b434d74ef8e" class=3D"conflue=
+nceTd">
+<p local-id=3D"baae12824e96">Number</p></td>
+<td data-local-id=3D"0d2c08f3-96cd-473c-823f-6f0758a89159" class=3D"conflue=
+nceTd">
+<p local-id=3D"79c15d6a3855">=EC=9C=A0=EC=95=84 =EC=9D=B8=EC=9B=90=EC=88=98=
+</p></td>
+<td data-local-id=3D"d46924d3-662e-408d-a2d3-d9f4858e756b" class=3D"conflue=
+nceTd">
+<p local-id=3D"12ef6cf247e7"></p></td>
+</tr>
+<tr data-local-id=3D"e632ac08-55a2-4992-80bc-a811328428cf">
+<td colspan=3D"2" data-local-id=3D"f53034c7-0cbd-412d-9b76-48e5ed7c46c7" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"59d3f4730b26">regDate</p></td>
+<td data-local-id=3D"d0d1e715-17ef-451a-9391-778b76d2985c" class=3D"conflue=
+nceTd">
+<p local-id=3D"85510464311b">String</p></td>
+<td data-local-id=3D"679dd5ee-ec14-49db-9d31-144d76196757" class=3D"conflue=
+nceTd">
+<p local-id=3D"3276f5f7bbde">=EB=93=B1=EB=A1=9D =EC=9D=BC=EC=8B=9C</p></td>
+<td data-local-id=3D"0067cd77-2fb1-4e1e-bf15-7512fe7ad040" class=3D"conflue=
+nceTd">
+<p local-id=3D"a56149740c11">YYYY-MM-DD HH:mm:ss</p></td>
+</tr>
+<tr data-local-id=3D"c2f84c58-1479-46ed-bd31-b3ab977a65fa">
+<td colspan=3D"2" data-local-id=3D"068278b1-c414-4113-aab7-a6ef0cb793ef" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"87749315c339">startTime</p></td>
+<td data-local-id=3D"f5735e1c-9d32-4182-92fb-84eed5a404c0" class=3D"conflue=
+nceTd">
+<p local-id=3D"fc7bb6c5a869">String</p></td>
+<td data-local-id=3D"6603f48b-8ee2-4203-930e-05d51a6f8a23" class=3D"conflue=
+nceTd">
+<p local-id=3D"a8615c2f8354">=EC=98=88=EC=95=BD =EC=9D=BC=EC=8B=9C</p></td>
+<td data-local-id=3D"adc0e7e0-020c-4697-85ec-fde25d0355b7" class=3D"conflue=
+nceTd">
+<p local-id=3D"27918cab5239">YYYY-MM-DD HH:mm:ss</p></td>
+</tr>
+<tr data-local-id=3D"150e3162-6b28-40bf-85dc-f32105086c43">
+<td colspan=3D"2" data-local-id=3D"bad95378-51f0-4584-84e9-baa77ea3399d" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"0bb4dec209a4">memo</p></td>
+<td data-local-id=3D"797d2a03-71f4-494b-a6e4-970f1469add7" class=3D"conflue=
+nceTd">
+<p local-id=3D"43e1956831f2">String</p></td>
+<td data-local-id=3D"37b1b303-efbb-48e6-8e7b-23ccdb194007" class=3D"conflue=
+nceTd">
+<p local-id=3D"fd26407bcc77">=EA=B3=A0=EA=B0=9D =EC=9A=94=EC=B2=AD=EC=82=AC=
+=ED=95=AD</p></td>
+<td data-local-id=3D"b077effa-4236-4288-9df5-93dcef8d39ef" class=3D"conflue=
+nceTd">
+<p local-id=3D"f92c3a4e50f4"></p></td>
+</tr>
+<tr data-local-id=3D"5ef77598-8a3b-4ae2-9469-afc2040f6cf6">
+<td colspan=3D"2" data-local-id=3D"edbca19b-e1fe-4ebb-8972-9b89e342de58" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"b0ea8b6fa385">type</p></td>
+<td data-local-id=3D"61a841b0-4e22-4a5a-a5b4-eda34b3e17b8" class=3D"conflue=
+nceTd">
+<p local-id=3D"d5e52671d98a">String</p></td>
+<td data-local-id=3D"f516f304-c62f-44ad-bab4-de09f54a41ca" class=3D"conflue=
+nceTd">
+<p local-id=3D"e09cccc692c0">=EC=98=88=EC=95=BD =EC=9C=A0=ED=98=95</p></td>
+<td data-local-id=3D"332f5ae2-9049-43cb-998c-35a7716da8b0" class=3D"conflue=
+nceTd">
+<p local-id=3D"35fc36ffd9e5">RESERVE: =EC=98=88=EC=95=BD<br>
+UNRESERVE: =EB=8C=80=EA=B8=B0/=EC=A6=89=EC=8B=9C=EC=B0=A9=EC=84=9D<br>
+ON_SITE: =ED=85=8C=EC=9D=B4=EB=B8=94=EC=98=A4=EB=8D=94<br>
+NOW_RESERVE: =EC=A7=80=EA=B8=88=EC=9E=90=EB=A6=AC=EC=84=A0=EC=A0=90</p></td=
+>
+</tr>
+<tr data-local-id=3D"50fec873-d0d5-4f71-9a60-7f5d2ab5cba5">
+<td colspan=3D"2" data-local-id=3D"922da8f2-b638-4f07-8495-5c685d94d7b5" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"bb3cb0ce41cd">source</p></td>
+<td data-local-id=3D"23e73009-5920-4ce4-be21-a5d35ccbf449" class=3D"conflue=
+nceTd">
+<p local-id=3D"e87632207a0f">String</p></td>
+<td data-local-id=3D"31ecc926-cf4b-454f-8e2a-4ba3a0f67514" class=3D"conflue=
+nceTd">
+<p local-id=3D"544fd16be180">=EB=93=B1=EB=A1=9D =EA=B2=BD=EB=A1=9C</p></td>
+<td data-local-id=3D"c91da274-e66d-4884-82f4-2df54c2c6f83" class=3D"conflue=
+nceTd">
+<p local-id=3D"b6d8fa6a69ff">VISIT: =EC=82=AC=EC=9E=A5=EB=8B=98=EB=B3=B4=EB=
+=93=9C<br>
+MOBILE: =EC=9C=A0=EC=A0=80=EC=95=B1<br>
+PHONE: kt=ED=8C=9D=EC=97=85<br>
+KIOSK: =ED=98=84=EC=9E=A5=EB=8C=80=EA=B8=B0<br>
+MOBILE_WAIT: =EC=9B=90=EA=B2=A9=EC=A4=84=EC=84=9C=EA=B8=B0<br>
+NAVER_BRIDGE: =EB=84=A4=EC=9D=B4=EB=B2=84=EB=B8=8C=EB=A6=BF=EC=A7=80</p></t=
+d>
+</tr>
+<tr data-local-id=3D"837a576e-e860-433f-bbc0-8be2e3124c80">
+<td colspan=3D"2" data-local-id=3D"6fc86a44-d800-406c-9289-3b5753f58e6d" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"8dcd8488e3e9">isChecked</p></td>
+<td data-local-id=3D"86960579-d9e7-4881-8ce5-6af83f467135" class=3D"conflue=
+nceTd">
+<p local-id=3D"452293728528">Bool</p></td>
+<td data-local-id=3D"00e3254b-7622-4de0-bdcd-9791b6421b30" class=3D"conflue=
+nceTd">
+<p local-id=3D"796deb08bbd2">=EC=9A=94=EC=B2=AD=EC=82=AC=ED=95=AD =ED=99=95=
+=EC=9D=B8 =EC=97=AC=EB=B6=80</p></td>
+<td data-local-id=3D"1c9213c2-b563-4cc5-adc1-25a70dc7c15d" class=3D"conflue=
+nceTd">
+<p local-id=3D"940413ccb9bc"></p></td>
+</tr>
+<tr data-local-id=3D"c1aeee26-e90b-4519-a1e4-ac7a0d3fee18">
+<td colspan=3D"2" data-local-id=3D"b07f4325-e231-4c75-901f-d429fb5d336e" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"9a8b8a691be9">isImmediate</p></td>
+<td data-local-id=3D"bb80b3d1-295f-4f4f-b2f6-4a99c315a44a" class=3D"conflue=
+nceTd">
+<p local-id=3D"bbafe0b59a13">Bool</p></td>
+<td data-local-id=3D"26aa265f-39fe-472a-83ea-5ae8ffcc0b59" class=3D"conflue=
+nceTd">
+<p local-id=3D"654538f64078">=EC=A6=89=EC=8B=9C=EC=B0=A9=EC=84=9D =EC=97=AC=
+=EB=B6=80</p></td>
+<td data-local-id=3D"4f65170b-bdd4-4030-a520-ccb8f9eb5a74" class=3D"conflue=
+nceTd">
+<p local-id=3D"d87fc40954a2"></p></td>
+</tr>
+<tr data-local-id=3D"f02dcea4-c68d-4a46-b1f2-a4801f9ba4ce">
+<td colspan=3D"2" data-local-id=3D"de3e8271-d7f7-4b3b-b089-42da57551819" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"a05d452550c4">waitSequenceStatic</p></td>
+<td data-local-id=3D"5972216a-7bf4-4f15-b7a2-8a3992247aa3" class=3D"conflue=
+nceTd">
+<p local-id=3D"df284624257b">Number</p></td>
+<td data-local-id=3D"c429b6af-352c-4a4a-9f0f-df6ffb91ce10" class=3D"conflue=
+nceTd">
+<p local-id=3D"1db08fd47f7b">=EB=8C=80=EA=B8=B0 =EB=B2=88=ED=98=B8</p></td>
+<td data-local-id=3D"fa684295-5a92-4732-947f-72c670465427" class=3D"conflue=
+nceTd">
+<p local-id=3D"2bc79e45b7d0">default: 0</p></td>
+</tr>
+<tr data-local-id=3D"909b763b-cace-47b1-a393-40c27bb28979">
+<td colspan=3D"2" data-local-id=3D"a351f514-ccaa-45d2-92dc-01cc5e890adb" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"81543b674487">isOverlap</p></td>
+<td data-local-id=3D"bef27a58-7460-4b5c-a40c-fc9439a4033b" class=3D"conflue=
+nceTd">
+<p local-id=3D"4929fb6a89f8">Boolean</p></td>
+<td data-local-id=3D"c860a797-79f9-4137-a8da-1196c9568353" class=3D"conflue=
+nceTd">
+<p local-id=3D"54b2fdd87090">=EC=A4=91=EB=B3=B5=EC=98=88=EC=95=BD =EC=97=AC=
+=EB=B6=80</p></td>
+<td data-local-id=3D"bdcff39b-4744-4aba-b7dc-987fe88864ff" class=3D"conflue=
+nceTd">
+<p local-id=3D"9c78053478a7"></p></td>
+</tr>
+<tr data-local-id=3D"bc5c697f-0583-4d12-9a92-1b199f538ec3">
+<td colspan=3D"2" data-local-id=3D"2942263c-ce0a-472f-8fe1-4160fc05593b" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"c04f60a9b49a">isCheckIn</p></td>
+<td data-local-id=3D"9561d7f3-7660-4c62-a0d6-fd98a4a529fc" class=3D"conflue=
+nceTd">
+<p local-id=3D"8dfe3c94f281">Boolean</p></td>
+<td data-local-id=3D"1fae8c4a-2a66-4650-8795-1354c48618ba" class=3D"conflue=
+nceTd">
+<p local-id=3D"056bfdf2274a">=EB=8C=80=EA=B8=B0 =ED=99=95=EC=A0=95 =EC=BD=
+=94=EB=93=9C =EC=9E=85=EB=A0=A5 =EC=97=AC=EB=B6=80</p></td>
+<td data-local-id=3D"01cd97c7-a551-4791-a824-0a89441a71c6" class=3D"conflue=
+nceTd">
+<p local-id=3D"040107c44a18"></p></td>
+</tr>
+<tr data-local-id=3D"97acbc24-6391-4d6d-aaac-f60723590df0">
+<td colspan=3D"2" data-local-id=3D"89236779-9ee2-4646-bef8-0053ed87d7ec" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"59b7e6f696f8">queueIndex</p></td>
+<td data-local-id=3D"40c0c2d5-b7d3-4f25-9117-a7e8f0cac565" class=3D"conflue=
+nceTd">
+<p local-id=3D"448f5754acdf">Number</p></td>
+<td data-local-id=3D"fb49380c-024f-498a-9be6-383d70db2e06" class=3D"conflue=
+nceTd">
+<p local-id=3D"94d725e238aa">=EB=8C=80=EA=B8=B0=EC=97=B4 =EC=9D=B8=EB=8D=B1=
+=EC=8A=A4</p></td>
+<td data-local-id=3D"36a6f157-5010-4428-b543-92439afe0ceb" class=3D"conflue=
+nceTd">
+<p local-id=3D"8ee30e885b70">default: -1</p></td>
+</tr>
+<tr data-local-id=3D"e287ca86-31a0-4db7-b693-e092a663500f">
+<td colspan=3D"2" data-local-id=3D"50adde8b-e407-4d8d-9ea4-5bac9683e43a" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"c275a3a3bf8f">queueName</p></td>
+<td data-local-id=3D"4325ef56-f656-44b3-a2f5-f042754d8d66" class=3D"conflue=
+nceTd">
+<p local-id=3D"e22142266e40">String</p></td>
+<td data-local-id=3D"a5d4c181-477a-4d4a-94ff-07d298cd2c5e" class=3D"conflue=
+nceTd">
+<p local-id=3D"418dd1af9dfc">=EB=8C=80=EA=B8=B0=EC=97=B4=EB=AA=85</p></td>
+<td data-local-id=3D"e2c76d59-edda-4ead-9ac1-492522f4cf35" class=3D"conflue=
+nceTd">
+<p local-id=3D"ab3ca17ea980">default: null</p></td>
+</tr>
+<tr data-local-id=3D"db53d5e4-9c66-4fb9-a637-8ee6099b9b24">
+<td colspan=3D"2" data-local-id=3D"6c2c89b4-93d4-4ae1-8108-c22ffa65cde3" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"539ef089d6ff">guest</p></td>
+<td data-local-id=3D"3aaccfc4-288f-4a44-a548-d7624d14b9d9" class=3D"conflue=
+nceTd">
+<p local-id=3D"3629a1719736">Object</p></td>
+<td data-local-id=3D"de3f0529-2322-4332-9ca5-44eddac962bb" class=3D"conflue=
+nceTd">
+<p local-id=3D"522f982c005e">=EA=B3=A0=EA=B0=9D =EC=A0=95=EB=B3=B4</p></td>
+<td data-local-id=3D"3ea1ddc1-40fa-4b02-961a-3f09f08d2f44" class=3D"conflue=
+nceTd">
+<p local-id=3D"7c4ee22b5704"></p></td>
+</tr>
+<tr data-local-id=3D"e7f93130-b8e8-4060-aef4-962b8866f766">
+<td rowspan=3D"3" data-local-id=3D"6f576b83-6eb2-4025-899e-dd2ab23444eb" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"d05fa09df609"></p></td>
+<td data-local-id=3D"03f040e8-3a88-41d6-80c1-4166479d702f" class=3D"conflue=
+nceTd">
+<p local-id=3D"da7869c9816c">idx</p></td>
+<td data-local-id=3D"600b1183-ec8b-4ed8-8c51-7ebf8312dccb" class=3D"conflue=
+nceTd">
+<p local-id=3D"85a121d3b314">Number</p></td>
+<td data-local-id=3D"7efb6ff0-12f6-4c54-a716-ebc5004659be" class=3D"conflue=
+nceTd">
+<p local-id=3D"63a5d4060c9d">=EA=B3=A0=EA=B0=9D=EC=95=84=EC=9D=B4=EB=94=94<=
+/p></td>
+<td data-local-id=3D"8ec28950-9c77-4b7b-9a3f-05fa43038b9f" class=3D"conflue=
+nceTd">
+<p local-id=3D"fd6b43147988"></p></td>
+</tr>
+<tr data-local-id=3D"290b9c5f-6f57-4624-8155-4a569d314701">
+<td data-local-id=3D"88160529-21de-47cf-9b48-e6aa3e434930" class=3D"conflue=
+nceTd">
+<p local-id=3D"099cc3f14dfc">name</p></td>
+<td data-local-id=3D"6153714d-ffb8-4164-b140-01e4041ceaf6" class=3D"conflue=
+nceTd">
+<p local-id=3D"1ecc782f28ae">String</p></td>
+<td data-local-id=3D"faac04b0-86c0-4cae-9e1c-eefa3db732e5" class=3D"conflue=
+nceTd">
+<p local-id=3D"2c25e65199e0">=EC=9D=B4=EB=A6=84</p></td>
+<td data-local-id=3D"d86eb018-0e1b-4c39-8fc7-9dc33fe69f0a" class=3D"conflue=
+nceTd">
+<p local-id=3D"416142a8ed73"></p></td>
+</tr>
+<tr data-local-id=3D"3fd48f30-c2c3-46e1-a09f-d16e0ce2a388">
+<td data-local-id=3D"e2864b59-be10-4094-abaa-caa5090563fc" class=3D"conflue=
+nceTd">
+<p local-id=3D"beb2f98173fc">phone</p></td>
+<td data-local-id=3D"31f41294-0306-44e2-8b92-6f2509f1e25a" class=3D"conflue=
+nceTd">
+<p local-id=3D"a62a1e9cf2dc">String</p></td>
+<td data-local-id=3D"231da0c1-61a5-4012-9f8b-8edc812e6232" class=3D"conflue=
+nceTd">
+<p local-id=3D"39da404133b3">=EC=A0=84=ED=99=94=EB=B2=88=ED=98=B8</p></td>
+<td data-local-id=3D"7232a90b-1b32-491c-9ec7-3f104f266c49" class=3D"conflue=
+nceTd">
+<p local-id=3D"493aa3bc5381"></p></td>
+</tr>
+<tr data-local-id=3D"e5dc3a0b-b956-4884-a280-2c349b2cf052">
+<td data-local-id=3D"a8973f9b-d269-4fe4-985f-44d878d27b75" class=3D"conflue=
+nceTd">
+<p local-id=3D"09679b8da143"></p></td>
+<td data-local-id=3D"f513f2ea-c8d4-49bb-9918-0564c2fcd786" class=3D"conflue=
+nceTd">
+<p local-id=3D"853f42e30f76">email</p></td>
+<td data-local-id=3D"bdd11536-8fa1-47ed-925a-147e77960d2a" class=3D"conflue=
+nceTd">
+<p local-id=3D"e13d9468528d">String</p></td>
+<td data-local-id=3D"7d808cdf-a027-4c83-8407-5c8678201196" class=3D"conflue=
+nceTd">
+<p local-id=3D"0d7ecdb90bce">=EC=9D=B4=EB=A9=94=EC=9D=BC</p></td>
+<td data-local-id=3D"f95de7a9-2365-4b73-b264-7ebc55f7d39b" class=3D"conflue=
+nceTd">
+<p local-id=3D"1d8db9f8f42c"></p></td>
+</tr>
+<tr data-local-id=3D"aed4713c-6ccc-4956-82f6-638f8ab16f64">
+<td data-local-id=3D"6a1cf4b2-2caa-4233-951e-b83639d29693" class=3D"conflue=
+nceTd">
+<p local-id=3D"e5884714af9a"></p></td>
+<td data-local-id=3D"79f05b7a-3501-4dba-938b-ee1d1a217bca" class=3D"conflue=
+nceTd">
+<p local-id=3D"2112641617af">locale</p></td>
+<td data-local-id=3D"d043316b-5f3b-445f-b994-5aa0c1790b2b" class=3D"conflue=
+nceTd">
+<p local-id=3D"28d77d600f6f">String</p></td>
+<td data-local-id=3D"8c23f757-1551-4e55-b7f0-370a09637bfe" class=3D"conflue=
+nceTd">
+<p local-id=3D"a116bf74f166">=EC=9C=A0=EC=A0=80=EA=B0=80 =EC=9D=B4=EC=9A=A9=
+=ED=95=9C =EC=96=B8=EC=96=B4</p></td>
+<td data-local-id=3D"3549671f-1a62-44a5-9043-2b91f881636f" class=3D"conflue=
+nceTd">
+<p local-id=3D"2513505de6d0"></p></td>
+</tr>
+<tr data-local-id=3D"8bd43542-8df6-4dd3-9e3e-d1605de22875">
+<td data-local-id=3D"cf525ff0-c053-4820-8830-17c0191d945f" class=3D"conflue=
+nceTd">
+<p local-id=3D"e3caf2ee4830"></p></td>
+<td data-local-id=3D"80657f95-807c-49bb-89f4-7376815619ac" class=3D"conflue=
+nceTd">
+<p local-id=3D"8bfec711bec2">visitCount</p></td>
+<td data-local-id=3D"0140bc37-bd50-4cad-828a-1c5b9313dd2a" class=3D"conflue=
+nceTd">
+<p local-id=3D"b7759dd03b9a">Number</p></td>
+<td data-local-id=3D"3915aa94-bcc4-485a-9e1f-2e72bf7a4682" class=3D"conflue=
+nceTd">
+<p local-id=3D"5bcd39c84bc3">=EB=B0=A9=EB=AC=B8 =ED=9A=9F=EC=88=98</p></td>
+<td data-local-id=3D"5b23b0ba-da3e-4ae3-8618-26a89e34d70c" class=3D"conflue=
+nceTd">
+<p local-id=3D"e4daf26e6c92"></p></td>
+</tr>
+<tr data-local-id=3D"f8f655fd-e3e5-49b1-a058-f3782620949c">
+<td data-local-id=3D"f9dec97b-aecd-43cc-b9e5-c1ca27d727d0" class=3D"conflue=
+nceTd">
+<p local-id=3D"9a338cf9f1b2"></p></td>
+<td data-local-id=3D"3a1e20a7-7ec2-43e1-bd50-c24e1bddd512" class=3D"conflue=
+nceTd">
+<p local-id=3D"2076f69056f8">cancelCount</p></td>
+<td data-local-id=3D"c6de67d2-c6f1-45f4-aae3-1a15246c2043" class=3D"conflue=
+nceTd">
+<p local-id=3D"fe2ae4fe828a">Number</p></td>
+<td data-local-id=3D"eb70c851-6ccc-495a-849e-4b25ab8c43f2" class=3D"conflue=
+nceTd">
+<p local-id=3D"0867ae55b61a">=EC=B7=A8=EC=86=8C =ED=9A=9F=EC=88=98</p></td>
+<td data-local-id=3D"34fed12b-73ca-4a1c-ad81-0b774fff1fec" class=3D"conflue=
+nceTd">
+<p local-id=3D"f7e6e7cbb0ac"></p></td>
+</tr>
+<tr data-local-id=3D"368e934d-ed3c-474c-a29e-088c5dda49af">
+<td data-local-id=3D"59ed6519-76c2-4b60-981d-2344e774ab8e" class=3D"conflue=
+nceTd">
+<p local-id=3D"8e8d80808fa0"></p></td>
+<td data-local-id=3D"21ecbe7a-3933-4668-9f5a-6c2cf24ef5bb" class=3D"conflue=
+nceTd">
+<p local-id=3D"970de60e629a">noShowCount</p></td>
+<td data-local-id=3D"c751b933-23d6-454f-8958-e1aa86dee0ac" class=3D"conflue=
+nceTd">
+<p local-id=3D"fa00e7b0cf01">Number</p></td>
+<td data-local-id=3D"849aff7e-e036-4127-b0ba-e75c81b5a5af" class=3D"conflue=
+nceTd">
+<p local-id=3D"daf2d159454b">=EB=85=B8=EC=87=BC =ED=9A=9F=EC=88=98</p></td>
+<td data-local-id=3D"b6f856b0-698c-4c64-99e9-438399c70cf3" class=3D"conflue=
+nceTd">
+<p local-id=3D"1b006e175d17"></p></td>
+</tr>
+<tr data-local-id=3D"9dc50784-da64-4cfe-97a1-1d0dc274eec3">
+<td colspan=3D"2" data-local-id=3D"060829b3-2652-419e-a201-9277c84fdfc2" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"6dfd82b188e5">restaurantTables</p></td>
+<td data-local-id=3D"f4ddcc4d-6798-48c6-972b-d8e7ac421002" class=3D"conflue=
+nceTd">
+<p local-id=3D"b088da6fce1b">Array</p></td>
+<td data-local-id=3D"12817712-7701-4f88-b142-2a8345214aee" class=3D"conflue=
+nceTd">
+<p local-id=3D"bf3a0968b818">=EC=98=88=EC=95=BD =ED=85=8C=EC=9D=B4=EB=B8=94=
+ =EC=A0=95=EB=B3=B4</p></td>
+<td data-local-id=3D"7a99aa11-08d6-46c9-b6ac-269d2baec3e6" class=3D"conflue=
+nceTd">
+<p local-id=3D"7b7d513ce8e8">default : []</p></td>
+</tr>
+<tr data-local-id=3D"6e13bf61-e937-4b56-ad16-b23154cc4957">
+<td rowspan=3D"4" data-local-id=3D"4d2fc8ad-4724-4eb0-866f-3d1ced2fde0a" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"6c9bec41b471"></p></td>
+<td data-local-id=3D"2c5d2e6d-d2fc-4f89-bc76-debac385c6f2" class=3D"conflue=
+nceTd">
+<p local-id=3D"4579823ab4a7">idx</p></td>
+<td data-local-id=3D"10d62837-1d88-429a-a1cb-aa1e9fbe537e" class=3D"conflue=
+nceTd">
+<p local-id=3D"7e9a30872c68">Number</p></td>
+<td data-local-id=3D"c2e97ed3-6428-4e6b-9804-9520fc8c08db" class=3D"conflue=
+nceTd">
+<p local-id=3D"03a0ad87cba2">=ED=85=8C=EC=9D=B4=EB=B8=94 =EC=95=84=EC=9D=B4=
+=EB=94=94</p></td>
+<td data-local-id=3D"7107270e-8988-40f2-8e7b-a697be4544d3" class=3D"conflue=
+nceTd">
+<p local-id=3D"c0d08625aeb8"></p></td>
+</tr>
+<tr data-local-id=3D"3582ddb7-b680-4756-b66f-a3a9f436999d">
+<td data-local-id=3D"2ee4d062-be93-4b12-82ac-a9bfc0b9000e" class=3D"conflue=
+nceTd">
+<p local-id=3D"960871dd2b8c">name</p></td>
+<td data-local-id=3D"030de58c-0f39-4824-b6be-887bf9abd065" class=3D"conflue=
+nceTd">
+<p local-id=3D"3f0a98afa519">String</p></td>
+<td data-local-id=3D"24497704-a20f-4954-8bf1-cd57a06b3934" class=3D"conflue=
+nceTd">
+<p local-id=3D"243b3caa01f8">=ED=85=8C=EC=9D=B4=EB=B8=94=EB=AA=85</p></td>
+<td data-local-id=3D"0970c91f-89e8-46c4-a03d-048111a268cf" class=3D"conflue=
+nceTd">
+<p local-id=3D"bcb701c0e858"></p></td>
+</tr>
+<tr data-local-id=3D"5aaa6eb0-74ba-4527-b2af-9c051c970c02">
+<td data-local-id=3D"0a33aafd-e7ad-4c87-95a5-8734aa398abb" class=3D"conflue=
+nceTd">
+<p local-id=3D"0ca36e7de74b">floorIdx</p></td>
+<td data-local-id=3D"ba7415e1-a4d0-4d1e-b65e-ad979cf16a2b" class=3D"conflue=
+nceTd">
+<p local-id=3D"e028e0d8b0b6">Number</p></td>
+<td data-local-id=3D"e8b86d63-cb31-4249-9560-c18fc9f28304" class=3D"conflue=
+nceTd">
+<p local-id=3D"25c6cdd3de54">=EC=B8=B5 =EC=95=84=EC=9D=B4=EB=94=94</p></td>
+<td data-local-id=3D"868650af-e9f1-417a-acd0-8f935a022d10" class=3D"conflue=
+nceTd">
+<p local-id=3D"b875ee0aff97"></p></td>
+</tr>
+<tr data-local-id=3D"fd1eef5e-19f6-48f0-ac61-3479074b2e89">
+<td data-local-id=3D"3f7aaaac-9b7b-46d0-a1e8-5a18a9436234" class=3D"conflue=
+nceTd">
+<p local-id=3D"081749c07333">floorName</p></td>
+<td data-local-id=3D"e682c202-9527-4130-b935-e95f57d01610" class=3D"conflue=
+nceTd">
+<p local-id=3D"33afd96d62eb">String</p></td>
+<td data-local-id=3D"00e137d1-407d-499d-ad84-6923923f8d7e" class=3D"conflue=
+nceTd">
+<p local-id=3D"fe99bc8fce8a">=EC=B8=B5 =EC=9D=B4=EB=A6=84</p></td>
+<td data-local-id=3D"0871d20d-d162-4826-abdc-2112eb9fbe2c" class=3D"conflue=
+nceTd">
+<p local-id=3D"db6f9d7a60cb"></p></td>
+</tr>
+<tr data-local-id=3D"5abea56e-2035-45c7-b9b4-62f30ca9c116">
+<td colspan=3D"2" data-local-id=3D"31c70fb6-3fde-42fa-9fea-6d8793980a18" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"95b1c046dc24">hasMenuOption</p></td>
+<td data-local-id=3D"e30126af-6ba5-4f99-a562-adfd55ae3f49" class=3D"conflue=
+nceTd">
+<p local-id=3D"60ae98405bbb">Boolean</p></td>
+<td data-local-id=3D"b15fc055-2c8b-4ec2-b89d-c8d858bc5172" class=3D"conflue=
+nceTd">
+<p local-id=3D"f769278a5d06">=EB=A9=94=EB=89=B4 =EC=98=B5=EC=85=98 =EC=9C=
+=A0=EB=AC=B4</p></td>
+<td data-local-id=3D"054957a7-2af2-4bc0-80f3-83855cbd0d82" class=3D"conflue=
+nceTd">
+<p local-id=3D"0d591e364471"></p></td>
+</tr>
+<tr data-local-id=3D"c866540e-ffd9-4dc0-b060-87809d301e15">
+<td colspan=3D"2" data-local-id=3D"fbceb434-24b3-4952-9c83-4e48300fd548" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"6c50781d7b48">menus</p></td>
+<td data-local-id=3D"08cc787e-ebdf-4f9c-b59d-4bd989d54a27" class=3D"conflue=
+nceTd">
+<p local-id=3D"9c4d54493254">Array&lt;Object&gt;</p></td>
+<td data-local-id=3D"a40c6389-0927-439c-b5e5-69e5d454c26b" class=3D"conflue=
+nceTd">
+<p local-id=3D"6950e0285495">=EC=A3=BC=EB=AC=B8 =EB=A9=94=EB=89=B4 =EB=AA=
+=A9=EB=A1=9D</p></td>
+<td data-local-id=3D"eb12674c-b38d-45a1-bcce-4d3488a30b57" class=3D"conflue=
+nceTd">
+<p local-id=3D"645ced15df06">default : []</p></td>
+</tr>
+<tr data-local-id=3D"2f5d29f0-58fe-4658-b4b6-62e9a6eb0cf1">
+<td rowspan=3D"3" data-local-id=3D"50bcbda9-cba3-4f13-abde-98d702bc637d" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"ed8fa15e9fa7"></p></td>
+<td data-local-id=3D"27798205-fe74-40f6-9e48-033d487e0a12" class=3D"conflue=
+nceTd">
+<p local-id=3D"56f9f3618c2c">menuName</p></td>
+<td data-local-id=3D"4f5f439e-1285-453c-a2a3-f49b4879ecf0" class=3D"conflue=
+nceTd">
+<p local-id=3D"42aec822c83a">String</p></td>
+<td data-local-id=3D"67d5651e-e8cc-488d-bf9f-bfb58f8aea7e" class=3D"conflue=
+nceTd">
+<p local-id=3D"1306b7848c58">=EB=A9=94=EB=89=B4=EB=AA=85</p></td>
+<td data-local-id=3D"545b4f4f-646d-48ce-a6a5-fbd734bcd98c" class=3D"conflue=
+nceTd">
+<p local-id=3D"bca93a400883"></p></td>
+</tr>
+<tr data-local-id=3D"65b1e18f-5779-4e1c-b692-7213fdae5239">
+<td data-local-id=3D"4c330ca6-302e-4364-b371-69996edc582c" class=3D"conflue=
+nceTd">
+<p local-id=3D"f81bc73b8aea">sizeName</p></td>
+<td data-local-id=3D"503931ad-74d3-4497-ad22-3d38a21d220f" class=3D"conflue=
+nceTd">
+<p local-id=3D"d9c1886229b0">String</p></td>
+<td data-local-id=3D"08377f1e-9d09-4106-acbf-b055960d39d7" class=3D"conflue=
+nceTd">
+<p local-id=3D"8125592b7571">=EC=82=AC=EC=9D=B4=EC=A6=88=EB=AA=85</p></td>
+<td data-local-id=3D"8195cff5-bb42-489b-83c7-e803cb760ca7" class=3D"conflue=
+nceTd">
+<p local-id=3D"2910d6ce8323"></p></td>
+</tr>
+<tr data-local-id=3D"d0b9f51c-413b-4d47-b7e8-26c86ec87826">
+<td data-local-id=3D"a7b30ad0-5de5-48fc-991b-b99d446aeefe" class=3D"conflue=
+nceTd">
+<p local-id=3D"b83505373fa2">quantity</p></td>
+<td data-local-id=3D"4be71674-edea-4663-84bb-1fa7b6b87b38" class=3D"conflue=
+nceTd">
+<p local-id=3D"489c4380fc4e">Number</p></td>
+<td data-local-id=3D"3f6ba727-82f0-4c70-9df9-2814cc157c2c" class=3D"conflue=
+nceTd">
+<p local-id=3D"8110e224e02e">=EC=88=98=EB=9F=89</p></td>
+<td data-local-id=3D"9237eb4a-6815-4827-8cda-def7db1ea73e" class=3D"conflue=
+nceTd">
+<p local-id=3D"abd9c120413e"></p></td>
+</tr>
+<tr data-local-id=3D"7ae77d6c-097f-4276-9078-82229e4cb57a">
+<td colspan=3D"2" data-local-id=3D"35c5a921-189f-41af-9b08-0b5d53877bf0" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"a9803f8d29ce">restaurantComment</p></td>
+<td data-local-id=3D"cb0def65-7a30-4151-b5fe-9c60cdd87845" class=3D"conflue=
+nceTd">
+<p local-id=3D"13af9a83bc4a">String</p></td>
+<td data-local-id=3D"0b28aa05-b9c9-4434-bd17-4607c162a98e" class=3D"conflue=
+nceTd">
+<p local-id=3D"c5bf7e668a1c">=EB=A7=A4=EC=9E=A5 =EB=A9=94=EB=AA=A8</p></td>
+<td data-local-id=3D"31bac59f-6f70-4592-bce5-af0a2ed471de" class=3D"conflue=
+nceTd">
+<p local-id=3D"8a87da9b627c"></p></td>
+</tr>
+<tr data-local-id=3D"62444d93-66ff-4002-ac11-8fb2aadce296">
+<td colspan=3D"2" data-local-id=3D"c01dd78c-85c4-4bec-bc18-c438275a5119" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"81a41a5ccd6b">isDepositRefund</p></td>
+<td data-local-id=3D"e3cdd6e7-f1a4-425a-ba02-a122f0ea4cf2" class=3D"conflue=
+nceTd">
+<p local-id=3D"ee654fc41d06">Boolean</p></td>
+<td data-local-id=3D"d5e3ca62-0e29-4c9f-994d-6ecec6ed4d38" class=3D"conflue=
+nceTd">
+<p local-id=3D"7a3b60052255">=EB=B3=B4=EC=A6=9D=EA=B8=88 =ED=99=98=EA=B8=89=
+ =EC=97=AC=EB=B6=80</p></td>
+<td data-local-id=3D"48991e78-cf98-46d6-9595-799f31690750" class=3D"conflue=
+nceTd">
+<p local-id=3D"12923152674b"></p></td>
+</tr>
+<tr data-local-id=3D"ce35ee80-effe-489f-8f9c-078e5606b846">
+<td colspan=3D"2" data-local-id=3D"b66b8683-2b16-49a3-84b8-0d153394cda8" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"955a1c908d75">depositPrice</p></td>
+<td data-local-id=3D"d149be4f-1c5c-4416-88d5-fda9a635cc3c" class=3D"conflue=
+nceTd">
+<p local-id=3D"867e28c179f9">Number</p></td>
+<td data-local-id=3D"6178a12c-d552-4a98-a2e1-35b31f03883c" class=3D"conflue=
+nceTd">
+<p local-id=3D"fbbbb6e37565">=EB=B3=B4=EC=A6=9D=EA=B8=88=EC=95=A1</p></td>
+<td data-local-id=3D"53a983f2-0f8e-4920-ba9e-12b844336238" class=3D"conflue=
+nceTd">
+<p local-id=3D"920af6315826"></p></td>
+</tr>
+<tr data-local-id=3D"173de702b679">
+<td colspan=3D"2" data-local-id=3D"28aaad26f3af" class=3D"confluenceTd">
+<p local-id=3D"efe2f8dcb473">isVisitDecision</p></td>
+<td data-local-id=3D"76506a4d817c" class=3D"confluenceTd">
+<p local-id=3D"966df7b6e154">Boolean</p></td>
+<td data-local-id=3D"e7af21b55692" class=3D"confluenceTd">
+<p local-id=3D"0e9869769eb4">=EB=B0=A9=EB=AC=B8 =EA=B2=B0=EC=A0=95 =EC=97=
+=AC=EB=B6=80</p></td>
+<td data-local-id=3D"5aeadf63dcb4" class=3D"confluenceTd">
+<p local-id=3D"6d43ce84d59e"></p></td>
+</tr>
+<tr data-local-id=3D"3bf8f9ce-8fa4-415e-9bd2-922c61bdddc2">
+<td colspan=3D"3" data-local-id=3D"285ebf69-74b3-4d32-bfd5-e7778eea23d7" cl=
+ass=3D"confluenceTd">
+<p local-id=3D"b09c1484098e">totalCount</p></td>
+<td data-local-id=3D"cd3cbe0f-8b8b-478c-ac69-d26e2c04811e" class=3D"conflue=
+nceTd">
+<p local-id=3D"d8c27d7f9f1f">Number</p></td>
+<td data-local-id=3D"62e5413d-7b2d-4a70-9259-df33c0c39017" class=3D"conflue=
+nceTd">
+<p local-id=3D"10799b9eeb8c">=EC=B4=9D =EA=B0=9C=EC=88=98</p></td>
+<td data-local-id=3D"ae15fccc-f208-453e-9eee-da6d6559fe82" class=3D"conflue=
+nceTd">
+<p local-id=3D"99e4645ead28"></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 local-id=3D"55c0e228be98" id=3D"API-=EC=98=88=EC=95=BD/=EB=8C=80=EA=B8=
+=B0=EB=AA=A9=EB=A1=9D=EC=A1=B0=ED=9A=8C-=EC=9A=94=EC=B2=AD=EC=84=B1=EA=B3=
+=B5">=EC=9A=94=EC=B2=AD =EC=84=B1=EA=B3=B5</h4>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Midnight" data-theme=3D"Midnight">HTTP/1.1 20=
+0 OK
+{
+    "reservationList": [
+        {
+            "idx": 23775,
+            "status": "FINISH",
+            "numOfPeople": 2,
+            "childCount": 0,
+            "startTime": "2022-03-14 17:17:52",
+            "finishTime": "2022-03-16 07:00:30",
+            "memo": "",
+            "type": "UNRESERVE",
+            "source": "KIOSK",
+            "isChecked": false,
+            "isCheckIn": true,
+            "isImmediate": false,
+            "regDate": "2022-03-14 17:17:52",
+            "waitSequenceStatic": 1,
+            "queueName": null,
+            "queueIndex": -1,
+            "isDepositRefund": false,
+            "depositPrice": 0,
+            "guest": {
+                "idx": 281019,
+                "name": "=EC=9D=BC=EC=9D=BC=EC=9D=B4",
+                "phone": "01011121112",
+                "email": "test@ggg.com",
+                "locale": "en",
+            },
+            "restaurantTables": [],
+            "isOverlap": false,
+            "restaurantComment": "",
+            "hasMenuOption": false,
+            "menus": [],
+            "isVisitDecision": true
+        },
+        {
+            "idx": 32843,
+            "status": "RESERVE",
+            "numOfPeople": 5,
+            "childCount": 1,
+            "startTime": "2022-03-14 22:00:00",
+            "finishTime": null,
+            "memo": "",
+            "type": "RESERVE",
+            "source": "VISIT",
+            "isChecked": false,
+            "isCheckIn": true,
+            "isImmediate": false,
+            "regDate": "2023-03-14 14:44:02",
+            "waitSequenceStatic": 0,
+            "queueName": null,
+            "queueIndex": -1,
+            "isDepositRefund": false,
+            "depositPrice": 0,
+            "guest": {
+                "idx": 281343,
+                "name": "=EB=B0=95=EC=83=88=EB=A1=9C=EC=9D=B4",
+                "phone": "01035937611",
+                "email": "test1@ggg.com",
+                "locale": "en",
+            },
+            "restaurantTables": [
+                {
+                    "idx": 8585,
+                    "name": "2=EB=B2=88",
+                    "floorIdx": 616,
+                    "floorName": "1=EC=B8=B5 =EC=9D=B4=EB=A6=84 =EC=88=98=
+=EC=A0=95"
+                }
+            ],
+            "isOverlap": false,
+            "restaurantComment": "=EC=98=88=EC=95=BD =ED=9E=88=EC=8A=A4=ED=
+=86=A0=EB=A6=AC =ED=85=8C=EC=8A=A4=ED=8A=B8",
+            "hasMenuOption": false,
+            "menus": [],
+            "isVisitDecision": true
+        }
+    ],
+    "totalCount": 2
+}</pre>
+</div>
+</div>
+<hr local-id=3D"a70770e1-b972-45a6-90d5-e7e21a15e9c8">
+<h4 local-id=3D"756e1b905634" id=3D"API-=EC=98=88=EC=95=BD/=EB=8C=80=EA=B8=
+=B0=EB=AA=A9=EB=A1=9D=EC=A1=B0=ED=9A=8C-=EC=9A=94=EC=B2=AD=EC=8B=A4=ED=8C=
+=A8">=EC=9A=94=EC=B2=AD =EC=8B=A4=ED=8C=A8</h4>
+<h5 local-id=3D"30b0a1192cd9" id=3D"API-=EC=98=88=EC=95=BD/=EB=8C=80=EA=B8=
+=B0=EB=AA=A9=EB=A1=9D=EC=A1=B0=ED=9A=8C-=EB=A7=A4=EC=9E=A5=EC=95=84=EC=9D=
+=B4=EB=94=94=EA=B0=80=EC=88=AB=EC=9E=90=ED=98=95=EC=8B=9D=EC=9D=B4=EC=95=84=
+=EB=8B=90=EB=95=8C">=EB=A7=A4=EC=9E=A5 =EC=95=84=EC=9D=B4=EB=94=94=EA=B0=80=
+ =EC=88=AB=EC=9E=90 =ED=98=95=EC=8B=9D=EC=9D=B4 =EC=95=84=EB=8B=90 =EB=95=
+=8C</h5>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Midnight" data-theme=3D"Midnight">HTTP/1.1 40=
+0 Bad Request
+{
+    "error": {
+        "status": 400,
+        "name": "DataTypeError",
+        "message": "=EB=A7=A4=EC=9E=A5 =EC=95=84=EC=9D=B4=EB=94=94=EB=8A=94=
+ =EC=88=AB=EC=9E=90=ED=98=95=EC=8B=9D=EC=9E=85=EB=8B=88=EB=8B=A4."
+    }
+}</pre>
+</div>
+</div>
+<p local-id=3D"f01ad054ab9b"></p>
+<hr local-id=3D"42a9c3f1e86e">
+<p local-id=3D"a6a71d6ac74e"></p>
+<style>
+    .aui td {
+        white-space: nowrap;
+    }
+</style>
+<table width=3D"100%" cellspacing=3D"0" class=3D"aui">
+<tbody>
+<tr>
+<th>=EB=B2=84=EC=A0=84</th>
+<th>=EB=82=A0=EC=A7=9C</th>
+<th>=EB=8C=93=EA=B8=80</th>
+</tr>
+<tr id=3D"rowForVersion37">
+<td align=3D"left"><b> <a href=3D"https://mealantcloud.atlassian.net/wiki/p=
+ages/viewpage.action?pageId=3D444661790">=ED=98=84=EC=9E=AC =EB=B2=84=EC=A0=
+=84</a> (v. 37) </b></td>
+<td align=3D"middle"><b> 2026-3=EC=9B=94-18-08:31 </b></td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><b> <a href=3D"h=
+ttps://mealantcloud.atlassian.net/wiki/people/712020:b9f8acb0-b1ef-43dd-95c=
+6-fd4179011dca" class=3D"url fn confluence-userlink" data-account-id=3D"712=
+020:b9f8acb0-b1ef-43dd-95c6-fd4179011dca">=EC=A1=B0=EC=9E=AC=EC=98=81</a> <=
+/b>:<br>
+ isVisitDecision =EC=B6=94=EA=B0=80</td>
+</tr>
+<tr id=3D"rowForVersion36" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D3365208090&amp;pageVersion=3D36">v. 36</a></td>
+<td align=3D"middle">2025-9=EC=9B=94-23-07:52</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/5e4b5185bbb5110c9a6764d9" class=
+=3D"url fn confluence-userlink" data-account-id=3D"5e4b5185bbb5110c9a6764d9=
+">=EC=86=90=EC=9C=A0=EC=A7=84</a> <br>
+=EC=9D=91=EB=8B=B5 =EB=B3=B8=EB=AC=B8=EC=9D=98 type, source =EC=B5=9C=EC=8B=
+=A0=ED=99=94</td>
+</tr>
+<tr id=3D"rowForVersion35" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D3099361540&amp;pageVersion=3D35">v. 35</a></td>
+<td align=3D"middle">2024-2=EC=9B=94-26-03:23</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/615bdde59cdb930072757432" class=
+=3D"url fn confluence-userlink" data-account-id=3D"615bdde59cdb930072757432=
+">=EC=98=A4=EC=84=B8=EC=97=B0</a></td>
+</tr>
+<tr id=3D"rowForVersion34" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D2158757814&amp;pageVersion=3D34">v. 34</a></td>
+<td align=3D"middle">2023-9=EC=9B=94-12-07:02</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/615bdde59cdb930072757432" class=
+=3D"url fn confluence-userlink" data-account-id=3D"615bdde59cdb930072757432=
+">=EC=98=A4=EC=84=B8=EC=97=B0</a></td>
+</tr>
+<tr id=3D"rowForVersion33" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D2053308481&amp;pageVersion=3D33">v. 33</a></td>
+<td align=3D"middle">2023-5=EC=9B=94-03-02:23</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/5e4b5185bbb5110c9a6764d9" class=
+=3D"url fn confluence-userlink" data-account-id=3D"5e4b5185bbb5110c9a6764d9=
+">=EC=86=90=EC=9C=A0=EC=A7=84</a> <br>
+=EC=9A=94=EC=B2=AD =EC=BF=BC=EB=A6=AC=EC=8A=A4=ED=8A=B8=EB=A7=81=EC=97=90 =
+=ED=8E=98=EC=9D=B4=EC=A7=95 =EA=B4=80=EB=A0=A8 =ED=95=AD=EB=AA=A9 =EC=B6=94=
+=EA=B0=80</td>
+</tr>
+<tr id=3D"rowForVersion32" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D2001567748&amp;pageVersion=3D32">v. 32</a></td>
+<td align=3D"middle">2023-4=EC=9B=94-18-07:21</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/622603e4c88f100068310196" class=
+=3D"url fn confluence-userlink" data-account-id=3D"622603e4c88f100068310196=
+">=EC=9C=A4=EC=A7=80=EC=9B=90</a></td>
+</tr>
+<tr id=3D"rowForVersion31" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D1996980647&amp;pageVersion=3D31">v. 31</a></td>
+<td align=3D"middle">2023-3=EC=9B=94-14-08:05</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/63118fe68d88ec800fbeb231" class=
+=3D"url fn confluence-userlink" data-account-id=3D"63118fe68d88ec800fbeb231=
+">=EC=8B=A0=EC=A2=85=EB=AF=BC</a></td>
+</tr>
+<tr id=3D"rowForVersion30" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D1984987170&amp;pageVersion=3D30">v. 30</a></td>
+<td align=3D"middle">2023-3=EC=9B=94-14-07:44</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/63118fe68d88ec800fbeb231" class=
+=3D"url fn confluence-userlink" data-account-id=3D"63118fe68d88ec800fbeb231=
+">=EC=8B=A0=EC=A2=85=EB=AF=BC</a> <br>
+=EC=9A=94=EC=B2=AD=EC=84=B1=EA=B3=B5 =EC=9D=91=EB=8B=B5=EC=98=88=EC=8B=9C =
+=EC=97=85=EB=8D=B0=EC=9D=B4=ED=8A=B8</td>
+</tr>
+<tr id=3D"rowForVersion29" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D1984365791&amp;pageVersion=3D29">v. 29</a></td>
+<td align=3D"middle">2023-2=EC=9B=94-16-01:10</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/63118fe68d88ec800fbeb231" class=
+=3D"url fn confluence-userlink" data-account-id=3D"63118fe68d88ec800fbeb231=
+">=EC=8B=A0=EC=A2=85=EB=AF=BC</a></td>
+</tr>
+<tr id=3D"rowForVersion28" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D1973616651&amp;pageVersion=3D28">v. 28</a></td>
+<td align=3D"middle">2022-4=EC=9B=94-19-09:15</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/5e4b5185bbb5110c9a6764d9" class=
+=3D"url fn confluence-userlink" data-account-id=3D"5e4b5185bbb5110c9a6764d9=
+">=EC=86=90=EC=9C=A0=EC=A7=84</a> <br>
+=EC=9D=91=EB=8B=B5 =EB=8D=B0=EC=9D=B4=ED=84=B0 =EC=A4=91 type =EB=B9=84=EA=
+=B3=A0=EB=9E=80=EC=97=90 =ED=98=84=EC=9E=A5=EC=A3=BC=EB=AC=B8 =EC=B6=94=EA=
+=B0=80</td>
+</tr>
+<tr id=3D"rowForVersion27" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D1837039725&amp;pageVersion=3D27">v. 27</a></td>
+<td align=3D"middle">2022-1=EC=9B=94-28-08:30</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/5e4b5185bbb5110c9a6764d9" class=
+=3D"url fn confluence-userlink" data-account-id=3D"5e4b5185bbb5110c9a6764d9=
+">=EC=86=90=EC=9C=A0=EC=A7=84</a> <br>
+=EB=A9=94=EB=89=B4 =EC=98=B5=EC=85=98 =EC=9C=A0=EB=AC=B4 =EB=B0=98=ED=99=98=
+ =EC=B6=94=EA=B0=80, =EB=A9=94=EB=89=B4 =EB=B0=98=ED=99=98 =ED=8F=AC=EB=A7=
+=B7 =EB=B3=80=EA=B2=BD</td>
+</tr>
+<tr id=3D"rowForVersion26" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D1808433314&amp;pageVersion=3D26">v. 26</a></td>
+<td align=3D"middle">2021-11=EC=9B=94-23-08:39</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/5e4b5185bbb5110c9a6764d9" class=
+=3D"url fn confluence-userlink" data-account-id=3D"5e4b5185bbb5110c9a6764d9=
+">=EC=86=90=EC=9C=A0=EC=A7=84</a> <br>
+=EC=98=88=EC=95=BD=EC=9D=98 =EB=93=B1=EB=A1=9D =EA=B2=BD=EB=A1=9C(source) =
+=EC=B6=94=EA=B0=80 =EB=B0=98=ED=99=98</td>
+</tr>
+<tr id=3D"rowForVersion25" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D1781498007&amp;pageVersion=3D25">v. 25</a></td>
+<td align=3D"middle">2021-11=EC=9B=94-11-06:13</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/5e4b5185bbb5110c9a6764d9" class=
+=3D"url fn confluence-userlink" data-account-id=3D"5e4b5185bbb5110c9a6764d9=
+">=EC=86=90=EC=9C=A0=EC=A7=84</a> <br>
+=EB=8C=80=EA=B8=B0 =EB=B2=88=ED=98=B8, =ED=85=8C=EC=9D=B4=EB=B8=94 =EC=B8=
+=B5=EC=9D=B4=EB=A6=84, =EC=A4=91=EB=B3=B5=EC=98=88=EC=95=BD =EC=97=AC=EB=B6=
+=80 =EC=B6=94=EA=B0=80 =EB=B0=98=ED=99=98</td>
+</tr>
+<tr id=3D"rowForVersion24" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D1773404340&amp;pageVersion=3D24">v. 24</a></td>
+<td align=3D"middle">2021-9=EC=9B=94-24-05:07</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/5e4b5185bbb5110c9a6764d9" class=
+=3D"url fn confluence-userlink" data-account-id=3D"5e4b5185bbb5110c9a6764d9=
+">=EC=86=90=EC=9C=A0=EC=A7=84</a> <br>
+=EB=8C=80=EA=B8=B0=EC=99=80 =EC=A3=BC=EB=AC=B8 =EB=A9=94=EB=89=B4 =ED=8F=AC=
+=ED=95=A8=ED=95=98=EC=97=AC =EB=B0=98=ED=99=98, =EC=9A=94=EC=B2=AD =EC=BF=
+=BC=EB=A6=AC (startTime, endTime) =EC=A0=9C=EA=B1=B0, =EA=B3=A0=EA=B0=9D =
+=ED=83=9C=EA=B7=B8 =EC=A0=95=EB=B3=B4 =EB=B0=98=ED=99=98=ED=95=98=EC=A7=80 =
+=EC=95=8A=EB=8F=84=EB=A1=9D =EC=88=98=EC=A0=95</td>
+</tr>
+<tr id=3D"rowForVersion23" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D1751482445&amp;pageVersion=3D23">v. 23</a></td>
+<td align=3D"middle">2021-2=EC=9B=94-05-07:51</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/5dd62495354f4f0e51fd93cc" class=
+=3D"url fn confluence-userlink" data-account-id=3D"5dd62495354f4f0e51fd93cc=
+">=EA=B9=80=EC=8A=B9=EA=B8=B0</a></td>
+</tr>
+<tr id=3D"rowForVersion22" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D1217757376&amp;pageVersion=3D22">v. 22</a></td>
+<td align=3D"middle">2021-2=EC=9B=94-02-09:21</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/5e4b5185bbb5110c9a6764d9" class=
+=3D"url fn confluence-userlink" data-account-id=3D"5e4b5185bbb5110c9a6764d9=
+">=EC=86=90=EC=9C=A0=EC=A7=84</a> <br>
+=EC=98=88=EC=95=BD =ED=85=8C=EC=9D=B4=EB=B8=94 =EC=97=86=EC=9D=84 =EB=95=8C=
+ Null =EC=9D=B4 =EC=95=84=EB=8B=8C =EB=B9=88 =EB=B0=B0=EC=97=B4=EB=A1=9C =
+=EC=88=98=EC=A0=95</td>
+</tr>
+<tr id=3D"rowForVersion21" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D1206059146&amp;pageVersion=3D21">v. 21</a></td>
+<td align=3D"middle">2020-8=EC=9B=94-21-03:59</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/5e4b5185bbb5110c9a6764d9" class=
+=3D"url fn confluence-userlink" data-account-id=3D"5e4b5185bbb5110c9a6764d9=
+">=EC=86=90=EC=9C=A0=EC=A7=84</a></td>
+</tr>
+<tr id=3D"rowForVersion20" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D741769308&amp;pageVersion=3D20">v. 20</a></td>
+<td align=3D"middle">2020-8=EC=9B=94-20-05:45</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/5e4b5185bbb5110c9a6764d9" class=
+=3D"url fn confluence-userlink" data-account-id=3D"5e4b5185bbb5110c9a6764d9=
+">=EC=86=90=EC=9C=A0=EC=A7=84</a></td>
+</tr>
+<tr id=3D"rowForVersion19" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D739639313&amp;pageVersion=3D19">v. 19</a></td>
+<td align=3D"middle">2020-8=EC=9B=94-06-02:10</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/5e4b5185bbb5110c9a6764d9" class=
+=3D"url fn confluence-userlink" data-account-id=3D"5e4b5185bbb5110c9a6764d9=
+">=EC=86=90=EC=9C=A0=EC=A7=84</a></td>
+</tr>
+<tr id=3D"rowForVersion18" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D710115329&amp;pageVersion=3D18">v. 18</a></td>
+<td align=3D"middle">2020-7=EC=9B=94-13-23:57</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/5e4b5185bbb5110c9a6764d9" class=
+=3D"url fn confluence-userlink" data-account-id=3D"5e4b5185bbb5110c9a6764d9=
+">=EC=86=90=EC=9C=A0=EC=A7=84</a></td>
+</tr>
+<tr id=3D"rowForVersion17" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D660963331&amp;pageVersion=3D17">v. 17</a></td>
+<td align=3D"middle">2020-6=EC=9B=94-29-06:48</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/5e4b5185bbb5110c9a6764d9" class=
+=3D"url fn confluence-userlink" data-account-id=3D"5e4b5185bbb5110c9a6764d9=
+">=EC=86=90=EC=9C=A0=EC=A7=84</a></td>
+</tr>
+<tr id=3D"rowForVersion16" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D629833738&amp;pageVersion=3D16">v. 16</a></td>
+<td align=3D"middle">2020-6=EC=9B=94-04-01:03</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/5e4b5185bbb5110c9a6764d9" class=
+=3D"url fn confluence-userlink" data-account-id=3D"5e4b5185bbb5110c9a6764d9=
+">=EC=86=90=EC=9C=A0=EC=A7=84</a></td>
+</tr>
+<tr id=3D"rowForVersion15" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D580943874&amp;pageVersion=3D15">v. 15</a></td>
+<td align=3D"middle">2020-5=EC=9B=94-27-10:03</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/5e4b5185bbb5110c9a6764d9" class=
+=3D"url fn confluence-userlink" data-account-id=3D"5e4b5185bbb5110c9a6764d9=
+">=EC=86=90=EC=9C=A0=EC=A7=84</a></td>
+</tr>
+<tr id=3D"rowForVersion14" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D565641247&amp;pageVersion=3D14">v. 14</a></td>
+<td align=3D"middle">2020-5=EC=9B=94-21-03:25</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/5e4b5185bbb5110c9a6764d9" class=
+=3D"url fn confluence-userlink" data-account-id=3D"5e4b5185bbb5110c9a6764d9=
+">=EC=86=90=EC=9C=A0=EC=A7=84</a></td>
+</tr>
+<tr id=3D"rowForVersion13" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D553517109&amp;pageVersion=3D13">v. 13</a></td>
+<td align=3D"middle">2020-4=EC=9B=94-21-06:31</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/5e4b5185bbb5110c9a6764d9" class=
+=3D"url fn confluence-userlink" data-account-id=3D"5e4b5185bbb5110c9a6764d9=
+">=EC=86=90=EC=9C=A0=EC=A7=84</a></td>
+</tr>
+<tr id=3D"rowForVersion12" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D494895214&amp;pageVersion=3D12">v. 12</a></td>
+<td align=3D"middle">2020-4=EC=9B=94-21-06:02</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/5e4b5185bbb5110c9a6764d9" class=
+=3D"url fn confluence-userlink" data-account-id=3D"5e4b5185bbb5110c9a6764d9=
+">=EC=86=90=EC=9C=A0=EC=A7=84</a></td>
+</tr>
+<tr id=3D"rowForVersion11" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D494993537&amp;pageVersion=3D11">v. 11</a></td>
+<td align=3D"middle">2020-4=EC=9B=94-20-23:54</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/5e4b5185bbb5110c9a6764d9" class=
+=3D"url fn confluence-userlink" data-account-id=3D"5e4b5185bbb5110c9a6764d9=
+">=EC=86=90=EC=9C=A0=EC=A7=84</a></td>
+</tr>
+<tr id=3D"rowForVersion10" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D494993410&amp;pageVersion=3D10">v. 10</a></td>
+<td align=3D"middle">2020-4=EC=9B=94-20-09:05</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/5e4b5185bbb5110c9a6764d9" class=
+=3D"url fn confluence-userlink" data-account-id=3D"5e4b5185bbb5110c9a6764d9=
+">=EC=86=90=EC=9C=A0=EC=A7=84</a></td>
+</tr>
+<tr id=3D"rowForVersion9" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D493027400&amp;pageVersion=3D9">v. 9</a></td>
+<td align=3D"middle">2020-4=EC=9B=94-16-06:32</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/5e4b5185bbb5110c9a6764d9" class=
+=3D"url fn confluence-userlink" data-account-id=3D"5e4b5185bbb5110c9a6764d9=
+">=EC=86=90=EC=9C=A0=EC=A7=84</a></td>
+</tr>
+<tr id=3D"rowForVersion8" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D485163037&amp;pageVersion=3D8">v. 8</a></td>
+<td align=3D"middle">2020-4=EC=9B=94-16-03:24</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/5e4b5185bbb5110c9a6764d9" class=
+=3D"url fn confluence-userlink" data-account-id=3D"5e4b5185bbb5110c9a6764d9=
+">=EC=86=90=EC=9C=A0=EC=A7=84</a></td>
+</tr>
+<tr id=3D"rowForVersion7" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D485130269&amp;pageVersion=3D7">v. 7</a></td>
+<td align=3D"middle">2020-4=EC=9B=94-14-05:30</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/5e4b5185bbb5110c9a6764d9" class=
+=3D"url fn confluence-userlink" data-account-id=3D"5e4b5185bbb5110c9a6764d9=
+">=EC=86=90=EC=9C=A0=EC=A7=84</a></td>
+</tr>
+<tr id=3D"rowForVersion6" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D480739361&amp;pageVersion=3D6">v. 6</a></td>
+<td align=3D"middle">2020-4=EC=9B=94-13-03:18</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/5e4b5185bbb5110c9a6764d9" class=
+=3D"url fn confluence-userlink" data-account-id=3D"5e4b5185bbb5110c9a6764d9=
+">=EC=86=90=EC=9C=A0=EC=A7=84</a></td>
+</tr>
+<tr id=3D"rowForVersion5" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D473497857&amp;pageVersion=3D5">v. 5</a></td>
+<td align=3D"middle">2020-3=EC=9B=94-31-05:27</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/5e4b5185bbb5110c9a6764d9" class=
+=3D"url fn confluence-userlink" data-account-id=3D"5e4b5185bbb5110c9a6764d9=
+">=EC=86=90=EC=9C=A0=EC=A7=84</a></td>
+</tr>
+<tr id=3D"rowForVersion4" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D452558885&amp;pageVersion=3D4">v. 4</a></td>
+<td align=3D"middle">2020-3=EC=9B=94-27-08:08</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/5e4b5185bbb5110c9a6764d9" class=
+=3D"url fn confluence-userlink" data-account-id=3D"5e4b5185bbb5110c9a6764d9=
+">=EC=86=90=EC=9C=A0=EC=A7=84</a></td>
+</tr>
+<tr id=3D"rowForVersion3" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D444661822&amp;pageVersion=3D3">v. 3</a></td>
+<td align=3D"middle">2020-3=EC=9B=94-27-06:08</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/5e4b5185bbb5110c9a6764d9" class=
+=3D"url fn confluence-userlink" data-account-id=3D"5e4b5185bbb5110c9a6764d9=
+">=EC=86=90=EC=9C=A0=EC=A7=84</a></td>
+</tr>
+<tr id=3D"rowForVersion2" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D444629068&amp;pageVersion=3D2">v. 2</a></td>
+<td align=3D"middle">2020-3=EC=9B=94-27-06:02</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/5e4b5185bbb5110c9a6764d9" class=
+=3D"url fn confluence-userlink" data-account-id=3D"5e4b5185bbb5110c9a6764d9=
+">=EC=86=90=EC=9C=A0=EC=A7=84</a></td>
+</tr>
+<tr id=3D"rowForVersion1" valign=3D"top">
+<td align=3D"left"><a href=3D"https://mealantcloud.atlassian.net/wiki/pages=
+/viewpage.action?pageId=3D444661809&amp;pageVersion=3D1">v. 1</a></td>
+<td align=3D"middle">2020-3=EC=9B=94-27-06:02</td>
+<td style=3D"white-space:normal;" class=3D"versionComment"><a href=3D"https=
+://mealantcloud.atlassian.net/wiki/people/5e4b5185bbb5110c9a6764d9" class=
+=3D"url fn confluence-userlink" data-account-id=3D"5e4b5185bbb5110c9a6764d9=
+">=EC=86=90=EC=9C=A0=EC=A7=84</a></td>
+</tr>
+</tbody>
+</table>
+    </div>
+</body>
+</html>
+------=_Part_10_441335920.1775790741893
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/90670aa742f1b632982b3a1027efa9c4509d84587cee58ed37e5ece475a309ed
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAA3NCSVQICAjb4U/gAAAAFVBMVEX/
+//9wcHBwcHBwcHBwcHBwcHBwcHA3RenHAAAAB3RSTlMAZoiZzN3/SzZomQAAAAlwSFlzAAALEgAA
+CxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAUdEVYdENy
+ZWF0aW9uIFRpbWUANi8xLzEzOKlF0AAAACFJREFUCJljYCATsCgwqIAZTMnMyRAhsTABCIMxkVxT
+GQCLcwHyUKXpLgAAAABJRU5ErkJggg==
+------=_Part_10_441335920.1775790741893--
