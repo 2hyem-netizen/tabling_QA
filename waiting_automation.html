@@ -1,0 +1,1123 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabling Kiosk Waiting Runner</title>
+  <style>
+    :root {
+      --bg: #f6f0e8;
+      --panel: rgba(255, 251, 245, 0.92);
+      --panel-strong: #fffdf8;
+      --ink: #1f1d1a;
+      --muted: #6f665d;
+      --line: rgba(54, 42, 31, 0.12);
+      --brand: #d95d39;
+      --brand-dark: #b84726;
+      --green: #1e7d55;
+      --red: #b4382b;
+      --shadow: 0 18px 40px rgba(76, 54, 34, 0.12);
+      --radius: 22px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(217, 93, 57, 0.18), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(214, 178, 109, 0.22), transparent 30%),
+        linear-gradient(180deg, #fbf7f0 0%, #f3ece2 100%);
+      min-height: 100vh;
+    }
+
+    .page {
+      width: min(1200px, calc(100% - 32px));
+      margin: 32px auto 48px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-copy {
+      padding: 28px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-copy::after {
+      content: "";
+      position: absolute;
+      inset: auto -50px -70px auto;
+      width: 220px;
+      height: 220px;
+      border-radius: 999px;
+      background: radial-gradient(circle, rgba(217, 93, 57, 0.18), transparent 72%);
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(217, 93, 57, 0.12);
+      color: var(--brand-dark);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 18px 0 12px;
+      font-size: clamp(32px, 5vw, 52px);
+      line-height: 1.03;
+      letter-spacing: -0.04em;
+    }
+
+    .hero-copy p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.7;
+      max-width: 58ch;
+    }
+
+    .hero-meta {
+      padding: 24px;
+      display: grid;
+      gap: 14px;
+      align-content: start;
+      background:
+        linear-gradient(135deg, rgba(217, 93, 57, 0.12), rgba(255, 255, 255, 0.8)),
+        var(--panel-strong);
+    }
+
+    .meta-item {
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid rgba(54, 42, 31, 0.08);
+    }
+
+    .meta-item strong,
+    .meta-item span {
+      display: block;
+    }
+
+    .meta-item strong {
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .meta-item span {
+      font-size: 15px;
+      word-break: break-all;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 20px;
+    }
+
+    .config {
+      grid-column: span 7;
+      padding: 24px;
+    }
+
+    .results {
+      grid-column: span 5;
+      padding: 24px;
+    }
+
+    .section-title {
+      margin: 0 0 18px;
+      font-size: 22px;
+      letter-spacing: -0.03em;
+    }
+
+    .subtle {
+      margin: -8px 0 20px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    input,
+    select,
+    textarea,
+    button {
+      font: inherit;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 13px 14px;
+      border-radius: 16px;
+      border: 1px solid rgba(54, 42, 31, 0.14);
+      background: rgba(255, 255, 255, 0.86);
+      color: var(--ink);
+      transition: border-color 0.16s ease, transform 0.16s ease, box-shadow 0.16s ease;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: none;
+      border-color: rgba(217, 93, 57, 0.7);
+      box-shadow: 0 0 0 4px rgba(217, 93, 57, 0.12);
+    }
+
+    textarea {
+      min-height: 170px;
+      resize: vertical;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    button {
+      border: 0;
+      border-radius: 999px;
+      padding: 13px 18px;
+      cursor: pointer;
+      font-weight: 700;
+      transition: transform 0.18s ease, opacity 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    button:hover {
+      transform: translateY(-1px);
+    }
+
+    button:disabled {
+      opacity: 0.6;
+      cursor: wait;
+      transform: none;
+    }
+
+    .primary {
+      background: linear-gradient(135deg, var(--brand), #ec7f45);
+      color: white;
+      box-shadow: 0 12px 24px rgba(217, 93, 57, 0.28);
+    }
+
+    .secondary {
+      background: rgba(54, 42, 31, 0.08);
+      color: var(--ink);
+    }
+
+    .ghost {
+      background: rgba(255, 255, 255, 0.92);
+      color: var(--ink);
+      border: 1px solid rgba(54, 42, 31, 0.12);
+    }
+
+    .status {
+      margin: 18px 0 0;
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: rgba(30, 125, 85, 0.08);
+      color: #16563c;
+      font-size: 14px;
+      line-height: 1.6;
+      border: 1px solid rgba(30, 125, 85, 0.16);
+      min-height: 54px;
+    }
+
+    .status.is-error {
+      background: rgba(180, 56, 43, 0.08);
+      color: #7e2219;
+      border-color: rgba(180, 56, 43, 0.16);
+    }
+
+    .status.is-neutral {
+      background: rgba(54, 42, 31, 0.06);
+      color: var(--muted);
+      border-color: rgba(54, 42, 31, 0.08);
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .stat {
+      padding: 16px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(54, 42, 31, 0.08);
+    }
+
+    .stat strong,
+    .stat span {
+      display: block;
+    }
+
+    .stat strong {
+      color: var(--muted);
+      font-size: 12px;
+      margin-bottom: 6px;
+    }
+
+    .stat span {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+    }
+
+    .token-box,
+    .log-box {
+      background: #1c1a18;
+      color: #f7efe5;
+      border-radius: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .token-box {
+      padding: 14px 16px;
+      min-height: 82px;
+      margin-bottom: 16px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 12px;
+      line-height: 1.55;
+      word-break: break-all;
+    }
+
+    .log-box {
+      max-height: 560px;
+      overflow: auto;
+      padding: 8px;
+    }
+
+    .log-item {
+      padding: 12px;
+      margin: 8px 0;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .log-item.success {
+      border-color: rgba(93, 198, 140, 0.32);
+    }
+
+    .log-item.error {
+      border-color: rgba(233, 89, 89, 0.28);
+    }
+
+    .log-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 8px;
+      font-size: 12px;
+      color: rgba(247, 239, 229, 0.75);
+    }
+
+    .log-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #fff7ee;
+      margin-bottom: 6px;
+    }
+
+    .log-item pre {
+      margin: 0;
+      white-space: pre-wrap;
+      word-break: break-word;
+      font-size: 12px;
+      line-height: 1.5;
+      color: #e9ddd0;
+    }
+
+    .hint {
+      margin-top: 16px;
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .inline-note {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+
+    @media (max-width: 980px) {
+      .hero,
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .config,
+      .results {
+        grid-column: auto;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        width: min(100% - 18px, 1200px);
+        margin: 18px auto 24px;
+      }
+
+      .hero-copy,
+      .hero-meta,
+      .config,
+      .results {
+        padding: 18px;
+      }
+
+      .form-grid,
+      .stats {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <section class="hero">
+      <article class="card hero-copy">
+        <div class="eyebrow">Kiosk Waiting Automation</div>
+        <h1>현장대기 랜덤 등록 페이지</h1>
+        <p>
+          사용하는 API는 아래와 같습니다.
+          <br>로그인 : <code>POST /v1/login</code>
+          <br>대기 등록 <code>POST /v1/restaurants/:restaurantIdx/reservations</code>
+          <br> * 동시 대기 등록 실행 버튼을 선택하여 게스트 정보를 랜덤으로 생성하여 여러 건을 병렬로 등록할 수 있습니다.
+        </p>
+      </article>
+      <aside class="card hero-meta">
+        <div class="meta-item">
+          <strong>API URL</strong>
+          <span id="heroApiUrl">https://staging-kiosk-api.tabling.co.kr</span>
+        </div>
+        <div class="meta-item">
+          <strong>Restaurant</strong>
+          <span id="heroRestaurant">52218</span>
+        </div>
+        <div class="meta-item">
+          <strong>Login Endpoint</strong>
+          <span>/v1/login</span>
+        </div>
+        <div class="meta-item">
+          <strong>Waiting Endpoint</strong>
+          <span>/v1/restaurants/:restaurantIdx/reservations</span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="grid">
+      <article class="card config">
+        <h2 class="section-title">실행 설정</h2>
+        <p class="subtle">주신 기본값을 미리 채워두었습니다. 수정 후 바로 테스트할 수 있습니다.</p>
+
+        <div class="form-grid">
+          <div class="full">
+            <label for="apiUrl">API URL</label>
+            <input id="apiUrl" type="url" value="https://staging-kiosk-api.tabling.co.kr">
+          </div>
+
+          <div>
+            <label for="email">로그인 이메일</label>
+            <input id="email" type="email" value="hmlee@tabling.co.kr" autocomplete="username">
+          </div>
+
+          <div>
+            <label for="password">비밀번호</label>
+            <input id="password" type="password" value="tkfkdgo0!@34" autocomplete="current-password">
+          </div>
+
+          <div>
+            <label for="restaurantIdx">restaurantIdx</label>
+            <input id="restaurantIdx" type="number" min="1" step="1" value="52218">
+          </div>
+
+          <div>
+            <label for="queueIndex">대기열 인덱스(queueIndex)</label>
+            <input id="queueIndex" type="number" min="-1" step="1" value="-1">
+          </div>
+
+          <div>
+            <!-- 순차적 대기 API 발송 : 총 등록 할 대기 건수-->
+            <label for="count">총 등록할 대기 건수</label>
+            <input id="count" type="number" min="1" max="500" step="1" value="10">
+          </div>
+
+          <div>
+            <!-- 병렬 대기 API 발송 : 한 순간에 동시에 처리할 대기 등록 건수-->            
+            <label for="concurrency">한번에 등록할 대기 등록 수</label>
+            <input id="concurrency" type="number" min="1" max="10" step="1" value="10">
+          </div>
+
+          <div>
+            <label for="localeMode">국적</label>
+            <select id="localeMode">
+              <option value="random" selected>랜덤 (ko, en, ch, jp)</option>
+              <option value="fixed">고정값 사용</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="localeFixed">고정 locale</label>
+            <select id="localeFixed">
+              <option value="ko" selected>ko</option>
+              <option value="en">en</option>
+              <option value="ch">ch</option>
+              <option value="jp">jp</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="peopleMode">인원수 방식</label>
+            <select id="peopleMode">
+              <option value="random" selected>랜덤 (1~9명)</option>
+              <option value="fixed">고정값 사용</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="peopleFixed">고정 인원수</label>
+            <input id="peopleFixed" type="number" min="1" max="99" step="1" value="2">
+          </div>
+
+          <div class="full">
+            <label for="preview">생성 예시 Payload</label>
+            <textarea id="preview" readonly></textarea>
+            <div class="inline-note">실행 전에 현재 설정 기준 예시 바디를 자동 갱신합니다.</div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button id="previewBtn" class="ghost" type="button">예시 새로고침</button>
+          <button id="loginBtn" class="secondary" type="button">로그인 테스트</button>
+          <button id="runBtn" class="primary" type="button">동시 대기 등록 실행</button>
+          <button id="finishAllWaitingsBtn" class="secondary" type="button">매장 대기 전체 퇴석 처리</button>
+          <button id="clearTokenBtn" class="ghost" type="button">저장 토큰 비우기</button>
+          <button id="clearBtn" class="secondary" type="button">로그 초기화</button>
+        </div>
+
+        <div id="status" class="status is-neutral">대기 중입니다.</div>
+        <p class="hint">
+          브라우저에서 바로 스테이징 API를 호출합니다. 액세스 토큰과 설정값은 브라우저 로컬 저장소에 보관되며, 동시 요청 수는 최대 10개로 제한됩니다.
+        </p>
+      </article>
+
+      <aside class="card results">
+        <h2 class="section-title">실행 결과</h2>
+        <div class="stats">
+          <div class="stat">
+            <strong>성공</strong>
+            <span id="successCount">0</span>
+          </div>
+          <div class="stat">
+            <strong>실패</strong>
+            <span id="errorCount">0</span>
+          </div>
+          <div class="stat">
+            <strong>마지막 HTTP 상태</strong>
+            <span id="lastStatus">-</span>
+          </div>
+          <div class="stat">
+            <strong>완료 시간</strong>
+            <span id="elapsedMs">0ms</span>
+          </div>
+        </div>
+
+        <label for="tokenBox">현재 액세스 토큰</label>
+        <div id="tokenBox" class="token-box">아직 로그인하지 않았습니다.</div>
+
+        <label for="logBox">요청 로그</label>
+        <div id="logBox" class="log-box"></div>
+      </aside>
+    </section>
+  </div>
+
+  <script>
+    const localePool = ["ko", "en", "ch", "jp"];
+    const ceoAdminApiUrl = "https://staging-ceo-admin.tabling.co.kr";
+    const storageKey = "tabling-kiosk-waiting-runner-config-v1";
+    const tokenStorageKey = "tabling-kiosk-waiting-runner-access-token-v1";
+    const elements = {
+      apiUrl: document.getElementById("apiUrl"),
+      email: document.getElementById("email"),
+      password: document.getElementById("password"),
+      restaurantIdx: document.getElementById("restaurantIdx"),
+      queueIndex: document.getElementById("queueIndex"),
+      count: document.getElementById("count"),
+      concurrency: document.getElementById("concurrency"),
+      localeMode: document.getElementById("localeMode"),
+      localeFixed: document.getElementById("localeFixed"),
+      peopleMode: document.getElementById("peopleMode"),
+      peopleFixed: document.getElementById("peopleFixed"),
+      preview: document.getElementById("preview"),
+      previewBtn: document.getElementById("previewBtn"),
+      loginBtn: document.getElementById("loginBtn"),
+      runBtn: document.getElementById("runBtn"),
+      finishAllWaitingsBtn: document.getElementById("finishAllWaitingsBtn"),
+      clearTokenBtn: document.getElementById("clearTokenBtn"),
+      clearBtn: document.getElementById("clearBtn"),
+      status: document.getElementById("status"),
+      tokenBox: document.getElementById("tokenBox"),
+      logBox: document.getElementById("logBox"),
+      successCount: document.getElementById("successCount"),
+      errorCount: document.getElementById("errorCount"),
+      lastStatus: document.getElementById("lastStatus"),
+      elapsedMs: document.getElementById("elapsedMs"),
+      heroApiUrl: document.getElementById("heroApiUrl"),
+      heroRestaurant: document.getElementById("heroRestaurant")
+    };
+
+    let accessToken = "";
+    let isRunning = false;
+    let logs = [];
+
+    function clamp(value, min, max) {
+      return Math.min(max, Math.max(min, value));
+    }
+
+    function randomInt(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    function randomFrom(array) {
+      return array[Math.floor(Math.random() * array.length)];
+    }
+
+    function randomName(length) {
+      const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+      return Array.from({ length }, () => chars[Math.floor(Math.random() * chars.length)]).join("");
+    }
+
+    function randomPhone() {
+      return "0000000" + Array.from({ length: 4 }, () => randomInt(0, 9)).join("");
+    }
+
+    function getSettings() {
+      const localeMode = elements.localeMode.value;
+      const peopleMode = elements.peopleMode.value;
+      return {
+        apiUrl: elements.apiUrl.value.trim().replace(/\/+$/, ""),
+        email: elements.email.value.trim(),
+        password: elements.password.value,
+        restaurantIdx: Number(elements.restaurantIdx.value),
+        queueIndex: clamp(Number(elements.queueIndex.value) || -1, -1, 999999),
+        count: clamp(Number(elements.count.value) || 1, 1, 500),
+        concurrency: clamp(Number(elements.concurrency.value) || 1, 1, 10),
+        nameLength: 10,
+        localeMode,
+        localeFixed: elements.localeFixed.value,
+        peopleMode,
+        peopleFixed: clamp(Number(elements.peopleFixed.value) || 1, 1, 99)
+      };
+    }
+
+    function saveSettings() {
+      localStorage.setItem(storageKey, JSON.stringify(getSettings()));
+    }
+
+    function saveToken(token) {
+      accessToken = token || "";
+      if (accessToken) {
+        localStorage.setItem(tokenStorageKey, accessToken);
+      } else {
+        localStorage.removeItem(tokenStorageKey);
+      }
+      renderToken();
+    }
+
+    function loadSettings() {
+      const raw = localStorage.getItem(storageKey);
+      if (!raw) {
+        return;
+      }
+
+      try {
+        const saved = JSON.parse(raw);
+        Object.entries(saved).forEach(([key, value]) => {
+          if (elements[key] && value !== undefined && value !== null) {
+            elements[key].value = String(value);
+          }
+        });
+      } catch (error) {
+        console.warn("설정 복원 실패", error);
+      }
+    }
+
+    function loadToken() {
+      accessToken = localStorage.getItem(tokenStorageKey) || "";
+    }
+
+    function syncHero() {
+      elements.heroApiUrl.textContent = elements.apiUrl.value.trim() || "-";
+      elements.heroRestaurant.textContent = elements.restaurantIdx.value.trim() || "-";
+    }
+
+    function buildPayload(settings) {
+      return {
+        guest: {
+          locale: settings.localeMode === "random" ? randomFrom(localePool) : settings.localeFixed,
+          isMarketing: false,
+          phone: randomPhone(),
+          name: randomName(settings.nameLength)
+        },
+        reservation: {
+          numOfPeople: settings.peopleMode === "random" ? randomInt(1, 9) : settings.peopleFixed,
+          queueIndex: settings.queueIndex
+        }
+      };
+    }
+
+    function updatePreview() {
+      const payload = buildPayload(getSettings());
+      elements.preview.value = JSON.stringify(payload, null, 2);
+      syncHero();
+      saveSettings();
+    }
+
+    function setStatus(message, tone = "neutral") {
+      elements.status.textContent = message;
+      elements.status.className = "status";
+      if (tone === "error") {
+        elements.status.classList.add("is-error");
+      } else if (tone === "neutral") {
+        elements.status.classList.add("is-neutral");
+      }
+    }
+
+    function setRunning(state) {
+      isRunning = state;
+      elements.loginBtn.disabled = state;
+      elements.runBtn.disabled = state;
+      elements.finishAllWaitingsBtn.disabled = state;
+    }
+
+    function renderToken() {
+      elements.tokenBox.textContent = accessToken || "저장된 토큰이 없습니다.";
+    }
+
+    function renderStats() {
+      const success = logs.filter((entry) => entry.ok).length;
+      const error = logs.length - success;
+      const last = logs[0];
+      elements.successCount.textContent = String(success);
+      elements.errorCount.textContent = String(error);
+      elements.lastStatus.textContent = last ? String(last.status ?? "-") : "-";
+    }
+
+    function logEntry(entry) {
+      logs.unshift(entry);
+      renderLogs();
+    }
+
+    function renderLogs() {
+      renderStats();
+      elements.logBox.innerHTML = "";
+
+      if (!logs.length) {
+        const empty = document.createElement("div");
+        empty.className = "log-item";
+        empty.innerHTML = "<div class='log-title'>아직 실행 로그가 없습니다.</div><pre>로그인 테스트 또는 동시 등록을 실행해 주세요.</pre>";
+        elements.logBox.appendChild(empty);
+        return;
+      }
+
+      logs.forEach((entry) => {
+        const item = document.createElement("div");
+        item.className = `log-item ${entry.ok ? "success" : "error"}`;
+        item.innerHTML = `
+          <div class="log-head">
+            <span>${entry.timestamp}</span>
+            <span>HTTP ${entry.status ?? "-"}</span>
+          </div>
+          <div class="log-title">${entry.title}</div>
+          <pre>${entry.detail}</pre>
+        `;
+        elements.logBox.appendChild(item);
+      });
+    }
+
+    async function parseResponse(response) {
+      const text = await response.text();
+      try {
+        return text ? JSON.parse(text) : {};
+      } catch {
+        return text;
+      }
+    }
+
+    async function login(settings) {
+      const response = await fetch(`${settings.apiUrl}/v1/login`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          email: settings.email,
+          password: settings.password
+        })
+      });
+
+      const data = await parseResponse(response);
+
+      if (!response.ok) {
+        throw new Error(typeof data === "string" ? data : JSON.stringify(data, null, 2));
+      }
+
+      return data;
+    }
+
+    async function createWaiting(settings, token, payload) {
+      const response = await fetch(
+        `${settings.apiUrl}/v1/restaurants/${settings.restaurantIdx}/reservations`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${token}`
+          },
+          body: JSON.stringify(payload)
+        }
+      );
+
+      const data = await parseResponse(response);
+      return {
+        ok: response.ok,
+        status: response.status,
+        data
+      };
+    }
+
+    async function fetchReservations(settings, token) {
+      const response = await fetch(
+        `${ceoAdminApiUrl}/api/restaurants/${settings.restaurantIdx}/reservation`,
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${token}`
+          }
+        }
+      );
+
+      const data = await parseResponse(response);
+
+      if (!response.ok) {
+        throw new Error(typeof data === "string" ? data : JSON.stringify(data, null, 2));
+      }
+
+      return data;
+    }
+
+    async function finishReservation(settings, token, reservationIdx) {
+      const response = await fetch(
+        `${ceoAdminApiUrl}/api/restaurants/${settings.restaurantIdx}/reservation/${reservationIdx}/status/finish`,
+        {
+          method: "PATCH",
+          headers: {
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${token}`
+          }
+        }
+      );
+
+      const data = response.status === 204 ? null : await parseResponse(response);
+      return {
+        ok: response.ok,
+        status: response.status,
+        data
+      };
+    }
+
+    function timestamp() {
+      return new Date().toLocaleString("ko-KR", { hour12: false });
+    }
+
+    async function ensureAccessToken(settings) {
+      if (accessToken) {
+        return accessToken;
+      }
+
+      setStatus("저장된 토큰이 없어 먼저 로그인하고 있습니다...");
+      const loginData = await login(settings);
+      saveToken(loginData.accessToken);
+      logEntry({
+        ok: true,
+        status: 200,
+        timestamp: timestamp(),
+        title: "자동 로그인 성공",
+        detail: JSON.stringify({
+          accessToken: loginData.accessToken,
+          refreshToken: loginData.refreshToken
+        }, null, 2)
+      });
+      return loginData.accessToken;
+    }
+
+    function getFinishTargetWaitings(reservationList) {
+      const terminalStatuses = new Set(["FINISH", "CANCEL", "NO_SHOW"]);
+      return reservationList.filter((item) => (
+        item &&
+        item.type === "UNRESERVE" &&
+        !terminalStatuses.has(item.status) &&
+        Number.isFinite(Number(item.idx))
+      ));
+    }
+
+    async function handleLoginTest() {
+      const settings = getSettings();
+      setRunning(true);
+      setStatus("로그인 요청을 보내는 중입니다...");
+
+      try {
+        const data = await login(settings);
+        saveToken(data.accessToken);
+        logEntry({
+          ok: true,
+          status: 200,
+          timestamp: timestamp(),
+          title: "로그인 성공",
+          detail: JSON.stringify({
+            accessToken: data.accessToken,
+            refreshToken: data.refreshToken
+          }, null, 2)
+        });
+        setStatus("새 액세스 토큰 발급에 성공했습니다.", "success");
+      } catch (error) {
+        saveToken("");
+        logEntry({
+          ok: false,
+          status: "-",
+          timestamp: timestamp(),
+          title: "로그인 실패",
+          detail: String(error)
+        });
+        setStatus("로그인에 실패했습니다. 로그를 확인해 주세요.", "error");
+      } finally {
+        setRunning(false);
+      }
+    }
+
+    async function runWithConcurrency(items, limit, worker) {
+      const results = new Array(items.length);
+      let index = 0;
+
+      async function next() {
+        while (index < items.length) {
+          const currentIndex = index++;
+          results[currentIndex] = await worker(items[currentIndex], currentIndex);
+        }
+      }
+
+      await Promise.all(Array.from({ length: Math.min(limit, items.length) }, next));
+      return results;
+    }
+
+    async function handleRun() {
+      const settings = getSettings();
+      setRunning(true);
+      setStatus("로그인 후 동시 등록을 준비하고 있습니다...");
+      elements.elapsedMs.textContent = "0ms";
+
+      try {
+        await ensureAccessToken(settings);
+
+        const tasks = Array.from({ length: settings.count }, (_, index) => ({
+          index: index + 1,
+          payload: buildPayload(settings)
+        }));
+
+        const startedAt = performance.now();
+
+        const batchResults = await runWithConcurrency(tasks, settings.concurrency, async (task) => {
+          const result = await createWaiting(settings, accessToken, task.payload);
+          logEntry({
+            ok: result.ok,
+            status: result.status,
+            timestamp: timestamp(),
+            title: result.ok ? `등록 성공 #${task.index}` : `등록 실패 #${task.index}`,
+            detail: JSON.stringify({
+              request: task.payload,
+              response: result.data
+            }, null, 2)
+          });
+          return result;
+        });
+
+        const elapsed = Math.round(performance.now() - startedAt);
+        elements.elapsedMs.textContent = `${elapsed}ms`;
+        const failedCount = batchResults.filter((item) => !item.ok).length;
+
+        if (failedCount > 0) {
+          setStatus(`총 ${settings.count}건 중 ${failedCount}건이 실패했습니다. 상세는 오른쪽 로그를 확인해 주세요.`, "error");
+        } else {
+          setStatus(`총 ${settings.count}건 등록이 모두 성공했습니다.`, "success");
+        }
+      } catch (error) {
+        setStatus(`실행 중 오류가 발생했습니다: ${String(error)}`, "error");
+      } finally {
+        setRunning(false);
+      }
+    }
+
+    async function handleFinishAllWaitings() {
+      const settings = getSettings();
+      setRunning(true);
+      setStatus("매장 대기 목록을 조회하는 중입니다...");
+      elements.elapsedMs.textContent = "0ms";
+
+      try {
+        const token = await ensureAccessToken(settings);
+        const startedAt = performance.now();
+        const reservationData = await fetchReservations(settings, token);
+        const reservationList = Array.isArray(reservationData.reservationList) ? reservationData.reservationList : [];
+        const targetWaitings = getFinishTargetWaitings(reservationList);
+
+        logEntry({
+          ok: true,
+          status: 200,
+          timestamp: timestamp(),
+          title: "대기 목록 조회 성공",
+          detail: JSON.stringify({
+            restaurantIdx: settings.restaurantIdx,
+            reservationCount: reservationList.length,
+            finishTargetCount: targetWaitings.length
+          }, null, 2)
+        });
+
+        if (!targetWaitings.length) {
+          elements.elapsedMs.textContent = `${Math.round(performance.now() - startedAt)}ms`;
+          setStatus("퇴석 처리할 대기 항목이 없습니다.", "neutral");
+          return;
+        }
+
+        setStatus(`대기 ${targetWaitings.length}건을 퇴석 처리하는 중입니다...`);
+
+        const results = await runWithConcurrency(targetWaitings, settings.concurrency, async (waiting) => {
+          const result = await finishReservation(settings, token, waiting.idx);
+          logEntry({
+            ok: result.ok,
+            status: result.status,
+            timestamp: timestamp(),
+            title: result.ok ? `대기 #${waiting.idx} 퇴석 처리 성공` : `대기 #${waiting.idx} 퇴석 처리 실패`,
+            detail: JSON.stringify({
+              idx: waiting.idx,
+              status: waiting.status,
+              type: waiting.type,
+              queueIndex: waiting.queueIndex,
+              source: waiting.source,
+              response: result.data
+            }, null, 2)
+          });
+          return result;
+        });
+
+        const elapsed = Math.round(performance.now() - startedAt);
+        const failedCount = results.filter((item) => !item.ok).length;
+        elements.elapsedMs.textContent = `${elapsed}ms`;
+
+        if (failedCount > 0) {
+          setStatus(`대기 ${targetWaitings.length}건 중 ${failedCount}건 퇴석 처리에 실패했습니다. 상세는 로그를 확인해 주세요.`, "error");
+        } else {
+          setStatus(`대기 ${targetWaitings.length}건을 모두 퇴석 처리했습니다.`, "success");
+        }
+      } catch (error) {
+        setStatus(`대기 퇴석 처리 중 오류가 발생했습니다: ${String(error)}`, "error");
+      } finally {
+        setRunning(false);
+      }
+    }
+
+    function clearLogs() {
+      logs = [];
+      renderLogs();
+      elements.elapsedMs.textContent = "0ms";
+      elements.lastStatus.textContent = "-";
+      setStatus("로그를 초기화했습니다.", "neutral");
+    }
+
+    function clearSavedToken() {
+      saveToken("");
+      setStatus("저장된 액세스 토큰을 삭제했습니다.", "neutral");
+    }
+
+    loadSettings();
+    loadToken();
+    renderToken();
+    renderLogs();
+    updatePreview();
+
+    [
+      elements.apiUrl,
+      elements.email,
+      elements.password,
+      elements.restaurantIdx,
+      elements.queueIndex,
+      elements.count,
+      elements.concurrency,
+      elements.localeMode,
+      elements.localeFixed,
+      elements.peopleMode,
+      elements.peopleFixed
+    ].forEach((element) => {
+      element.addEventListener("input", updatePreview);
+      element.addEventListener("change", updatePreview);
+    });
+
+    elements.previewBtn.addEventListener("click", updatePreview);
+    elements.loginBtn.addEventListener("click", handleLoginTest);
+    elements.runBtn.addEventListener("click", handleRun);
+    elements.finishAllWaitingsBtn.addEventListener("click", handleFinishAllWaitings);
+    elements.clearTokenBtn.addEventListener("click", clearSavedToken);
+    elements.clearBtn.addEventListener("click", clearLogs);
+  </script>
+</body>
+</html>
