@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabling Automation Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <nav class="top-nav card">
+      <a class="nav-link is-active" href="index.html">홈</a>
+      <a class="nav-link" href="restaurant_edit.html">매장 정보 수정</a>
+      <a class="nav-link" href="waiting_automation.html">대기 등록</a>
+    </nav>
+
+    <section class="hero">
+      <article class="card hero-copy">
+        <div class="eyebrow">Tabling Automation</div>
+        <h1>매장 정보 관리 허브</h1>
+        <p>
+          상위 페이지에서 공통 설정과 매장 정보를 불러온 뒤, 매장 수정 페이지와 대기 등록 페이지로 이동할 수 있습니다.
+          <br>Kiosk 로그인 API: <code>POST /v1/login</code>
+          <br>Office 로그인 API: <code>POST /v1/auth/login</code>
+          <br>매장 조회 API: <code>GET /v1/restaurants/:restaurantIdx</code>
+          <br>매장 수정 API: <code>PATCH /v2/restaurants/:idx</code>
+        </p>
+        <div class="endpoint-panel hero-endpoints">
+          <div class="endpoint-row">
+            <div>
+              <label for="kioskApiUrl">Kiosk API URL</label>
+              <input id="kioskApiUrl" type="url" value="https://staging-kiosk-api.tabling.co.kr" readonly>
+            </div>
+          </div>
+
+          <div class="endpoint-row">
+            <div>
+              <label for="officeApiUrl">Office API URL</label>
+              <input id="officeApiUrl" type="url" value="https://staging-office-api.tabling.co.kr" readonly>
+            </div>
+          </div>
+        </div>
+      </article>
+      <aside class="card hero-meta">
+        <div class="meta-item">
+          <strong>Restaurant Idx</strong>
+          <span id="heroRestaurant">52218</span>
+        </div>
+        <div class="meta-item">
+          <strong>매장명</strong>
+          <span id="heroName">-</span>
+        </div>
+        <div class="meta-item">
+          <strong>주소</strong>
+          <span id="heroAddress">-</span>
+        </div>
+        <div class="meta-item">
+          <strong>전화번호</strong>
+          <span id="heroPhone">-</span>
+        </div>
+        <div class="meta-item">
+          <strong>대기 서비스</strong>
+          <span id="heroWaitingScope">-</span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="grid">
+      <article class="card config">
+        <h2 class="section-title">공통 설정</h2>
+        <p class="subtle">로그인 정보를 입력한 뒤 매장 정보를 불러오세요.</p>
+
+        <div class="form-grid">
+
+          <div class="form-divider full">Kiosk 로그인</div>
+
+          <div>
+            <label for="kioskEmail">Kiosk 로그인 이메일</label>
+            <input id="kioskEmail" type="email" autocomplete="username">
+          </div>
+
+          <div class="login-action-field">
+            <label for="kioskPassword">Kiosk 비밀번호</label>
+            <div class="inline-action-field">
+              <input id="kioskPassword" type="password" autocomplete="current-password">
+              <button id="kioskLoginBtn" class="secondary compact" type="button">Kiosk 로그인</button>
+            </div>
+          </div>
+
+          <div class="form-divider full">Office 로그인</div>
+
+          <div>
+            <label for="officeEmail">Office 로그인 이메일</label>
+            <input id="officeEmail" type="email" autocomplete="username">
+          </div>
+
+          <div class="login-action-field">
+            <label for="officePassword">Office 비밀번호</label>
+            <div class="inline-action-field">
+              <input id="officePassword" type="password" autocomplete="current-password">
+              <button id="officeLoginBtn" class="secondary compact" type="button">Office 로그인</button>
+            </div>
+          </div>
+
+          <div>
+            <label for="restaurantIdx">restaurantIdx</label>
+            <input id="restaurantIdx" type="number" min="1" step="1" value="52218">
+          </div>
+        </div>
+
+        <div class="controls">
+          <button id="loadBtn" class="primary" type="button">매장 정보 불러오기</button>
+        </div>
+
+        <div id="status" class="status is-neutral">공통 설정을 입력한 뒤 매장 정보를 불러와 주세요.</div>
+      </article>
+
+      <aside class="card results">
+        <h2 class="section-title">바로가기</h2>
+        <div id="summaryCard" class="tool-links" hidden>
+          <a id="editLink" class="tool-card" href="restaurant_edit.html">
+            <strong>매장 정보 수정</strong>
+            <span>불러온 매장 데이터를 폼에서 수정하고 저장합니다.</span>
+          </a>
+          <a id="waitingLink" class="tool-card" href="waiting_automation.html">
+            <strong>대기 등록 자동화</strong>
+            <span>현장 대기 랜덤 등록 및 퇴석 처리를 실행합니다.</span>
+          </a>
+        </div>
+
+        <div class="tool-links">
+          <a class="tool-card" href="restaurant_edit.html">
+            <strong>매장 정보 수정 페이지</strong>
+            <span>상위 페이지에서 불러온 정보를 기반으로 수정합니다.</span>
+          </a>
+          <a class="tool-card" href="waiting_automation.html">
+            <strong>대기 등록 페이지</strong>
+            <span>기존 대기 자동화 도구로 이동합니다.</span>
+          </a>
+        </div>
+
+        <p class="hint">
+          매장 정보는 브라우저 로컬 저장소에 캐시됩니다. 다른 매장을 조회하면 캐시가 갱신됩니다.
+        </p>
+      </aside>
+    </section>
+  </div>
+
+  <script src="shared.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
